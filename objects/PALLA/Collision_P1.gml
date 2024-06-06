@@ -1,0 +1,1 @@
+global.touched = "1";

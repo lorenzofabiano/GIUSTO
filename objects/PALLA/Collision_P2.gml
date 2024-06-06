@@ -1,0 +1,2 @@
+
+global.touched = "2";
