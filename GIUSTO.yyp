@@ -37,6 +37,7 @@
     {"id":{"name":"CENTRO","path":"objects/CENTRO/CENTRO.yy",},},
     {"id":{"name":"Object1_2","path":"objects/Object1_2/Object1_2.yy",},},
     {"id":{"name":"oGayEvent","path":"objects/oGayEvent/oGayEvent.yy",},},
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oUtil","path":"objects/oUtil/oUtil.yy",},},
     {"id":{"name":"P1","path":"objects/P1/P1.yy",},},
     {"id":{"name":"P2","path":"objects/P2/P2.yy",},},

@@ -8,16 +8,36 @@ alarm[0] = 300;
 
 
 //track Gay people position
-_x1 = 0;
-_y1 = 0;
-_x2 = 0;
-_y2 = 0;
+_xCatch = [];
+_yCatch = [];
+_xTry = [];
+_yTry = [];
 yDiff = 10;
 
 
 //mark them as Gay
 baseGayMarkTimer=30;
 gayMarkTimer = baseGayMarkTimer;
-baseGayMovementInterval = 5;
-gayMovementInterval = baseGayMovementInterval;
-gay = false;
+
+//interval for checking movement
+baseGayMovementIntervalX = 1;
+gayMovementIntervalX = baseGayMovementIntervalX;
+
+baseGayMovementIntervalY = 2;
+gayMovementIntervalY = baseGayMovementIntervalY;
+
+
+// fin number of players
+var object_to_find = oPlayer; // Replace obj_myObject with the actual object name
+
+// array to store ids
+instance_ids = [];
+
+// Get the number of instances of the object
+var n_of_players = instance_number(object_to_find);
+
+// Loop through all instances of the object and store their IDs in the array
+for (var i = 0; i < n_of_players; i++) {
+    var id_instance = instance_find(object_to_find, i);
+    array_push(instance_ids, id_instance);
+}
