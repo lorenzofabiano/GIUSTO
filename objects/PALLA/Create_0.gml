@@ -29,5 +29,4 @@ CIAO
 
 
 */
-
-global.touched = "";
+lastTouchedBy = noone;
