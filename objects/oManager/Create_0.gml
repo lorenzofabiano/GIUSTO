@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-//create centri 
+
+//choose number of centri e palle
 numberOfCentri = 3;
 numberOfPalle = 1;
-//numberOfPlayers = 2;
 
 centriSpawn(numberOfCentri);
 palleSpawn(numberOfPalle);
@@ -24,5 +24,5 @@ spawnPlayer("Noyz",Sprite1_7,1);
 storePlayersIds();
 
 //events
-startEventTimer(oGayEvent,5,10,"Prossimo evento: GayUnPride");
+startEventTimer(oLazioEvent,5,4,"Prossimo evento: Salta se non sei un ratto");
 

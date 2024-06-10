@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object1_2",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oWall",
+  "eventList":[],
   "managed":true,
-  "name":"Object1_2",
+  "name":"oWall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

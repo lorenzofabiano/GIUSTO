@@ -77,3 +77,14 @@ if (instance_exists(oGayEvent)) {
 }
 
 #endregion
+
+#region lazio event
+var colliding = physics_test_overlap(x,y+1,phy_rotation,oGround);
+if (colliding) {
+	with oLazioEvent {
+		if (lazioPlayerFound == false) {
+			lazioPlayer = other;
+			lazioPlayerFound = true;
+		}
+	}	
+}
