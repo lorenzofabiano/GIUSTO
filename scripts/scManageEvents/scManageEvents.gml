@@ -18,6 +18,18 @@ function startEventTimer(event,duration,timer,text) {
 	}
 }
 
+function startSubEventTimer(subEvent,duration,timer,text) {
+	if !(instance_exists(oSubTimer)) {
+		with instance_create_layer(x,y,"Instances",oSubTimer) {
+			timerDuration = timer * 60;
+			eventToSpawn = subEvent;
+			eventToSpawnDuration = duration;
+			textOverTimer = text;
+		}
+	}
+}
+
+
 function startEvent(event,duration) {
 	if !(instance_exists(event)) {
 		with instance_create_layer(x,y,"Instances",event) self.duration = duration * 60;
@@ -40,7 +52,23 @@ function setEventTimerText(event) {
 	    break;
 	
 	    case oWallEvent:
-	         eventTimerText = choose("BIG BAMBOO PER CHI TOCCA I MURI","SE TOCCHI I MURI OTTIENI UN CALIPPO DA SUCARE","TOCCA I MURI E SUCA");
+	         eventTimerText = choose("PISELON PER CHI TOCCA I MURI","SE TOCCHI I MURI VINCI UN CALIPPO FRESCO DA SUCARE","TOCCA I MURI E SUCA");
+	    break;
+		
+		//sub events
+	    case oMrSaturnEvent:
+	         eventTimerText = choose("OH CAZZO ARRIVANO!","ECCOLI CHE ARRIVANO...","LI SENTO ARRIVARE...");
+	    break;
+	}
+}
+
+
+function setSubEventTimerText(event) {
+	switch(event) 
+	{
+		//sub events
+	    case oMrSaturnEvent:
+	         subEventTimerText = choose("OH CAZZO ARRIVANO!","ECCOLI CHE ARRIVANO...","LI SENTO ARRIVARE...");
 	    break;
 	}
 }
