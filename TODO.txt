@@ -1,24 +1,27 @@
-fatto 1) fai che ce ponno sta piu centri
-fatto 2) fai che ce ponno sta piu palle
-fatto PER ENTRAMBI ATTENZIONE è MEGLIO FARE UN MANAGER CONTROLLER DI TUTTO!
+fatto #) fai che ce ponno sta piu centri
+fatto #) fai che ce ponno sta piu palle
+fatto #)PER ENTRAMBI ATTENZIONE è MEGLIO FARE UN MANAGER CONTROLLER DI TUTTO!
 (che gestisce le globali etc MA il last touched è locale alle palle XD)
 
 -da migliorare- 1) chi si muove
-fatto 2) chi tocca terra (chi non salta)
-fatto 3) chi tocca la palla (giustamente)
-fatto 3) chi tocca un muro
+fatto #) chi tocca terra (chi non salta)
+fatto #) chi tocca la palla (giustamente)
+fatto #) chi tocca un muro
 
 
-3) blocchi a caso che escono (fisici)
-4) (cambio gravita')
+°) blocchi a caso che escono (fisici)
+°) (cambio gravita')
 
 
-1) camera shake
-2) scie
-3) particellari
-4) (stanza che ruotola)
+°) camera shake
+°) scie
+°) particellari
+°) (stanza che ruotola)
 
-1) DORIME
-
-1) LIVELLI DIVERSI RANDOM ANCHE DINAMICI (qualsiasi cosa voglia dire) 
+°) LIVELLI DIVERSI RANDOM ANCHE DINAMICI (qualsiasi cosa voglia dire) 
 CIAO
+
+
+°) schermata di vittoria e risultati
+°) pre-match con scelta del pg e nome
+°) modalità a team

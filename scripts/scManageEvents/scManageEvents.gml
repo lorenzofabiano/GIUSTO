@@ -54,12 +54,8 @@ function setEventTimerText(event) {
 	    case oWallEvent:
 	         eventTimerText = choose("PISELON PER CHI TOCCA I MURI","SE TOCCHI I MURI VINCI UN CALIPPO FRESCO DA SUCARE","TOCCA I MURI E SUCA");
 	    break;
-		
-		//sub events
-	    case oMrSaturnEvent:
-	         eventTimerText = choose("OH CAZZO ARRIVANO!","ECCOLI CHE ARRIVANO...","LI SENTO ARRIVARE...");
-	    break;
 	}
+
 }
 
 
@@ -70,5 +66,10 @@ function setSubEventTimerText(event) {
 	    case oMrSaturnEvent:
 	         subEventTimerText = choose("OH CAZZO ARRIVANO!","ECCOLI CHE ARRIVANO...","LI SENTO ARRIVARE...");
 	    break;
+		
+	    case oBigMrSaturnEvent:
+	         subEventTimerText = choose("QUESTI SONO GROSSI...","ECCOLI CHE ARRIVANO...","LI SENTO ARRIVARE...");
+	    break;
+		
 	}
 }

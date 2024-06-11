@@ -38,6 +38,8 @@
   "resources":[
     {"id":{"name":"CENTRO","path":"objects/CENTRO/CENTRO.yy",},},
     {"id":{"name":"oBallTouchEvent","path":"objects/oBallTouchEvent/oBallTouchEvent.yy",},},
+    {"id":{"name":"oBigMrSaturn","path":"objects/oBigMrSaturn/oBigMrSaturn.yy",},},
+    {"id":{"name":"oBigMrSaturnEvent","path":"objects/oBigMrSaturnEvent/oBigMrSaturnEvent.yy",},},
     {"id":{"name":"oEvent","path":"objects/oEvent/oEvent.yy",},},
     {"id":{"name":"oGayEvent","path":"objects/oGayEvent/oGayEvent.yy",},},
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},},
@@ -58,6 +60,7 @@
     {"id":{"name":"scManagePlayersBallsCentri","path":"scripts/scManagePlayersBallsCentri/scManagePlayersBallsCentri.yy",},},
     {"id":{"name":"scMiscellaneous","path":"scripts/scMiscellaneous/scMiscellaneous.yy",},},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},},
+    {"id":{"name":"sMrSaturn_Big","path":"sprites/sMrSaturn_Big/sMrSaturn_Big.yy",},},
     {"id":{"name":"sMrSaturn","path":"sprites/sMrSaturn/sMrSaturn.yy",},},
     {"id":{"name":"Sprite1_1","path":"sprites/Sprite1_1/Sprite1_1.yy",},},
     {"id":{"name":"Sprite1_3","path":"sprites/Sprite1_3/Sprite1_3.yy",},},
