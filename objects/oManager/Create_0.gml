@@ -8,21 +8,20 @@ numberOfPalle = 1;
 centriSpawn(numberOfCentri);
 palleSpawn(numberOfPalle);
 
-spawnPlayer("Pippo",Sprite1_3,1);
-spawnPlayer("Franco",Sprite1_1,1);
-spawnPlayer("Cane",Sprite1_4,1);
-spawnPlayer("Negros",Sprite1_5,1);
-spawnPlayer("SkuSku",Sprite1_6,1);
-spawnPlayer("Raffolappo",Sprite1_7,1);
-spawnPlayer("Piero",Sprite1_3,1);
-spawnPlayer("Naviglio",Sprite1_1,1);
-spawnPlayer("Bundeleros",Sprite1_4,1);
-spawnPlayer("WeDoThePatto",Sprite1_5,1);
-spawnPlayer("DiSangue",Sprite1_6,1);
-spawnPlayer("Noyz",Sprite1_7,1);
+spawnPlayer("Goffredo",Sprite1_3,1);
+spawnPlayer("Raffolappo",Sprite1_1,1);
+spawnPlayer("Marco",Sprite1_4,1);
+spawnPlayer("Musmeci",Sprite1_5,1);
 
 storePlayersIds();
 
 //events
-startEventTimer(oLazioEvent,5,4,"Prossimo evento: Salta se non sei un ratto");
+
+//what to write before any event
+eventTimerText = "";
+
+//set how long it has to be before new event starts
+global.baseEventTimeInterval = 5 * 60;
+global.eventTimeInterval = global.baseEventTimeInterval;
+global.eventActive = 0;
 

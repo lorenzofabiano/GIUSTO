@@ -9,7 +9,8 @@ subText = choose("No vabbe'...","Che schifo...","Imbarazzo totale...","Che figur
 duration = 300;
 endEventDuration = 180;
 
-lazioPlayerFound = false;
-lazioPlayer = noone;
+ballPlayerFound = false;
+ballPlayer = noone;
 
 endEvent = false;
+

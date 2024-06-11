@@ -11,10 +11,13 @@
   "name":"oGayEvent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Events",
+    "path":"folders/Objects/Events.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oEvent",
+    "path":"objects/oEvent/oEvent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

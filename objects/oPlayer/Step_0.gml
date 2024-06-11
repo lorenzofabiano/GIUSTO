@@ -88,3 +88,29 @@ if (colliding) {
 		}
 	}	
 }
+#endregion
+
+#region ball touch event
+var colliding = physics_test_overlap(x,y+1,phy_rotation,PALLA);
+if (colliding) {
+	with oBallTouchEvent {
+		if (ballPlayerFound == false) {
+			ballPlayer = other;
+			ballPlayerFound = true;
+		}
+	}	
+}
+#endregion
+
+#region wall touch event
+//var collidingGround = physics_test_overlap(x,y+1,phy_rotation,oGround);
+var collidingWall = physics_test_overlap(x,y,phy_rotation,oWall);
+if (collidingWall) {
+	with oWallEvent {
+		if (wallPlayerFound == false) {
+			wallPlayer = other;
+			wallPlayerFound = true;
+		}
+	}	
+}
+#endregion

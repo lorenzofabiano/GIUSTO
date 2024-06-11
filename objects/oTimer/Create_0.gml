@@ -11,7 +11,12 @@ textPosX = 0;
 textPosY = room_height/2 - 100;
 maxTextPosX = room_width/2;
 
-textOverTimer = "PROSSIMO EVENTO: GAY"
+textUpperPosX = 0;
+textUpperPosY = room_height/2 - 150;
+maxTextUpperPosX = room_width/2;
+
+textOverTimer = "PROSSIMO EVENTO: GAY";
+textUpper = "PROSSIMO EVENTO:";
 
 eventToSpawn = noone;
 eventToSpawnDuration = 0;

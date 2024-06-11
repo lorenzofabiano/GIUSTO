@@ -9,7 +9,7 @@ subText = choose("No vabbe'...","Che schifo...","Imbarazzo totale...","Che figur
 duration = 300;
 endEventDuration = 180;
 
-lazioPlayerFound = false;
-lazioPlayer = noone;
+wallPlayerFound = false;
+wallPlayer = noone;
 
 endEvent = false;
