@@ -16,7 +16,7 @@ spawnPlayer("Musmeci",Sprite1_5,1);
 storePlayersIds();
 
 //events
-eventCycling = false;
+eventCycling = true;
 
 //what to write before any event
 eventTimerText = "";

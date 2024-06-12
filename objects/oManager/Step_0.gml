@@ -14,7 +14,7 @@ if (eventCycling) {
 
 	if (global.subEventTimeInterval == 0) && !(global.subEventActive){
 	
-		var eventChoose = choose(oMrSaturnEvent,oBigMrSaturnEvent);
+		var eventChoose = choose(oMrSaturnEvent,oBigMrSaturnEvent,oFatChocoboEvent);
 		setSubEventTimerText(eventChoose);
 		startSubEventTimer(eventChoose,10,4,subEventTimerText);
 		global.subEventActive = true;
