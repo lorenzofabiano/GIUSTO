@@ -75,5 +75,9 @@ function setSubEventTimerText(event) {
 	         subEventTimerText = choose("Oioioi...","VIA DAL CENTRO!!!");
 	    break;
 		
+	    case oCameraRotateEvent:
+	         subEventTimerText = choose("PREPARATEVI A SBRATTARE","VOMITO ASSICURATO");
+	    break;
+		
 	}
 }

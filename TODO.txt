@@ -14,9 +14,9 @@ fatto #) chi tocca un muro
 
 
 °) camera shake
-°) scie
-°) particellari
-°) (stanza che ruotola)
+fatto #) scie
+fatto (sni, solo per il centro) #) particellari
+fatto (sni, solo camera che ruotola)#) (stanza che ruotola)
 
 °) LIVELLI DIVERSI RANDOM ANCHE DINAMICI (qualsiasi cosa voglia dire) 
 CIAO

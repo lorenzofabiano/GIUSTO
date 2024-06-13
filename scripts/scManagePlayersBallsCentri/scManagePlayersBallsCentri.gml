@@ -33,7 +33,7 @@ function playersSpawn(nPlayers){
 	}
 }
 
-function spawnPlayer(name,sprite,controls){
+function spawnPlayer(name,sprite,controls,color){
 
 	var first_posx = random_range(0,room_width);
 	var first_posy = random_range(0,room_height);
@@ -41,6 +41,7 @@ function spawnPlayer(name,sprite,controls){
 		nameChosen = name;
 		sprite_index = sprite;
 		controlScheme = controls;
+		ownColor = color;
 	}
 }
 

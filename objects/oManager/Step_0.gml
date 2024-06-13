@@ -14,7 +14,7 @@ if (eventCycling) {
 
 	if (global.subEventTimeInterval == 0) && !(global.subEventActive){
 	
-		var eventChoose = choose(oMrSaturnEvent,oBigMrSaturnEvent,oFatChocoboEvent);
+		var eventChoose = choose(oMrSaturnEvent,oBigMrSaturnEvent,oFatChocoboEvent,oCameraRotateEvent);
 		setSubEventTimerText(eventChoose);
 		startSubEventTimer(eventChoose,10,4,subEventTimerText);
 		global.subEventActive = true;
@@ -24,3 +24,4 @@ if (eventCycling) {
 	global.eventTimeInterval = max(global.eventTimeInterval-1,0);
 	global.subEventTimeInterval = max(global.subEventTimeInterval-1,0);
 }
+

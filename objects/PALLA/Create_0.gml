@@ -30,3 +30,9 @@ CIAO
 
 */
 lastTouchedBy = noone;
+
+//speed over which a trail appears
+trailSpdThreshold = 15;
+//each how many steps should the trail appear when the speed is reached
+baseTrailSpawnRate = 1;
+trailSpawnRate = baseTrailSpawnRate;

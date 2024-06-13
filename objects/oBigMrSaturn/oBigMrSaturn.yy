@@ -8,8 +8,8 @@
   "name":"oBigMrSaturn",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"subEventAsset",
+    "path":"folders/Objects/Events/Sub Events/subEventAsset.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+draw_set_color(c_white);
+
 //draw player ids
 for (var i = 1; i <= array_length(global.instance_ids); i++) {
 	textOverPlayer("P"+string(i),75,i);

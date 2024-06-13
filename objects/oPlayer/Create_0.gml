@@ -16,6 +16,19 @@ _right = 0;
 
 //score
 points = 0;
+
+//shadow
+
+
+//speed over which a shadow appears
+shadowSpdThreshold = 17;
+//each how many steps should the shadow appear when the speed is reached
+baseShadowSpawnRate = 2;
+shadowSpawnRate = baseShadowSpawnRate;
+
+//get sprite's color, do not edit
+ownColor = c_white;
+
 #endregion
 
 #region gay event
