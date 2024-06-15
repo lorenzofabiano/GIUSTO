@@ -9,21 +9,24 @@ centriSpawn(numberOfCentri);
 palleSpawn(numberOfPalle);
 
 spawnPlayer("Goffredo",Sprite1_3,1,c_teal);
-//spawnPlayer("Raffolappo",Sprite1_1,1);
-//spawnPlayer("Marco",Sprite1_4,1);
-//spawnPlayer("Musmeci",Sprite1_5,1);
+spawnPlayer("Raffolappo",Sprite1_1,4,c_green);
+//spawnPlayer("Pietro1",Sprite1_1,4,c_green);
+//spawnPlayer("Pietro2",Sprite1_1,4,c_green);
 
 storePlayersIds();
 
 //events
 eventCycling = true;
 
+
+//startEventTimer(oGayEvent,10,4,"chi si muove gay");
+
 //what to write before any event
 eventTimerText = "";
 subEventTimerText = "";
 
 //set how long it has to be before new event starts
-global.baseEventTimeInterval = 10 * 60;
+global.baseEventTimeInterval = 1 * 60;
 global.eventTimeInterval = global.baseEventTimeInterval;
 global.eventActive = 0;
 

@@ -12,4 +12,4 @@ draw_set_color(c_white);
 	}
 } */
 
-if (gayPlayer != noone) draw_text(gayPlayer.x,gayPlayer.y - 60, "SONO GAY");
+//if (gayPlayer != noone) draw_text(gayPlayer.x,gayPlayer.y - 60, "SONO GAY");

@@ -9,10 +9,13 @@ maxTextPosX = room_width/2;
 subText = choose("Ovviamente...","Dai non piagne...","Lo sapevano anche i sassi...","Prevedibilissimo...","Palese...","Lo sarebbe stato pure se nse moveva...","Non avevamo dubbi...");
 
 duration = 300;
-endEventDuration = 180;
+scrittaDuration = duration+180;
 
 gayPlayerFound = false;
 gayPlayer = noone;
 
 endEvent = false;
 
+listaGay = [];
+
+listaNomi = "";

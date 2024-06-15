@@ -48,6 +48,8 @@ yDiff = 2;
 baseGayMarkTimer=5;
 gayMarkTimer = 0;
 gay = false;
+Egay = false;
+gayLevel = 0;
 
 xNow = 0;
 yNow = 0;
