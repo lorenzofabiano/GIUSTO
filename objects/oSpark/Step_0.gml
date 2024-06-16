@@ -6,3 +6,4 @@ y += lengthdir_y(spd,direction);
 
 image_alpha = fade;
 fade = max(fade - fadeSpd,0);
+if fade == 0 instance_destroy();

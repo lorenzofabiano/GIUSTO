@@ -46,5 +46,18 @@ gayMarkTimer = 0;
 gay = false;
 Egay = false;
 gayLevel = 0;
+hasBeenGayed = false;
+hasBeenLazioed = false;
+#endregion
+
+#region laziale 
+laziale = false;
+lazialeLevel = 0;
+Elaziale = false;
+#endregion
+
+#region gay contagion event
+baseTouchDelay = 30;
+touchDelay = baseTouchDelay;
 #endregion
 

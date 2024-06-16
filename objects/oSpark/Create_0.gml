@@ -7,4 +7,3 @@ direction = angle;
 spd = random_range(1,20);
 fade = 1;
 fadeSpd = .1;
-alarm[0] = 30;

@@ -28,3 +28,13 @@ function startTimer(time) {
 	}
 }
 #endregion
+
+#region //+1 Level
+function levelUp(text) {
+	with instance_create_layer(x,y,"Instances",oPlusOne) {
+		playerWhoScored = text;
+		playerWhoSpawned = other;
+		color = other.ownColor;
+		gayLevelShow = true;
+	}
+}

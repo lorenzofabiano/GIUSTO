@@ -44,7 +44,7 @@ function setEventTimerText(event) {
 	    break;
 
 	    case oGayEvent:
-	         eventTimerText = choose("CHI SI MUOVE E' ALQUANTO OMOSEX","IL PRIMO CHE SI MUOVE COMMETTE UN GRAVE ERRORE","SE TI MUOVI SEI g4y");
+	         eventTimerText = choose("CHI SI MUOVE E' ALQUANTO OMOSEX","CHI SI MUOVE COMMETTE UN GRAVE ERRORE","SE TI MUOVI SEI g4y");
 	    break;
 
 	    case oLazioEvent:
@@ -53,6 +53,10 @@ function setEventTimerText(event) {
 	
 	    case oWallEvent:
 	         eventTimerText = choose("PISELON PER CHI TOCCA I MURI","TOCCA I MURI E VINCI UN CALIPPO FRESCO DA SUCARE","TOCCA I MURI E SUCA");
+	    break;
+		
+	    case oGayContagionEvent:
+	         eventTimerText = choose("CHI TOCCA I GAY VERRA' CONTAGIATO","SCAPPA, I GAY SONO CONTAGIOSI!");
 	    break;
 	}
 

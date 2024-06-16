@@ -1,18 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"oSpark",
+  "%Name":"oGayContagionEvent",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSpark",
+  "name":"oGayContagionEvent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Events",
+    "path":"folders/Objects/Events.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oEvent",
+    "path":"objects/oEvent/oEvent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sSpark",
-    "path":"sprites/sSpark/sSpark.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

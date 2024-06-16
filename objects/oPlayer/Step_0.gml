@@ -34,9 +34,17 @@ if (_right) physics_apply_force(x, y, 3000, 0);
 
 if (instance_exists(oGayEvent)) {
 
-	if (phy_speed > spdThreshold) gay = true;
+	
+	if (phy_speed > spdThreshold) {
+		gay = true;
+		if (!hasBeenGayed) {
+			levelUp("Gay Level");
+			hasBeenGayed = true;
+		}
+	}
 	else gay = false;
-
+	
+	
 	//if (gay) {
 	//	gayMarkTimer = baseGayMarkTimer;
 	//	//timeSpentAsGay++;
@@ -49,20 +57,52 @@ if (instance_exists(oGayEvent)) {
 	//}
 	//else gayMarkTimer = max(gayMarkTimer-1,0);
 
+} else hasBeenGayed = false;
+
+#endregion
+
+#region gay contagion
+
+if (instance_exists(oGayContagionEvent)) {
+
+	
+	var colliding = physics_test_overlap(x,y,phy_rotation,oPlayer);
+	if (colliding) var playerCollided = instance_place(phy_position_x,phy_position_y,oPlayer);
+	if (playerCollided != noone) {
+		if (playerCollided.Egay = true) && (touchDelay < 0) {
+			if Egay == false Egay = true;
+			gayLevel++;
+			touchDelay = baseTouchDelay;
+			levelUp("Gay Level");
+		}
+	}
+
+	touchDelay--;
 }
 
 #endregion
 
-#region lazio event
-var colliding = physics_test_overlap(x,y+1,phy_rotation,oGround);
-if (colliding) {
-	with oLazioEvent {
-		if (lazioPlayerFound == false) {
-			lazioPlayer = other;
-			lazioPlayerFound = true;
+#region lazio
+if (instance_exists(oLazioEvent)) {
+	var colliding = physics_test_overlap(x,y+1,phy_rotation,oGround);
+	//if (colliding) {
+	//	with oLazioEvent_old {
+	//		if (lazioPlayerFound == false) {
+	//			lazioPlayer = other;
+	//			lazioPlayerFound = true;
+	//		}
+	//	}	
+	//}
+	if (colliding) {
+		laziale = true;
+		if (!hasBeenLazioed) {
+			levelUp("Laziale Level");
+			hasBeenLazioed = true;
 		}
-	}	
-}
+	} else laziale = false;
+
+} else hasBeenLazioed = false;
+
 #endregion
 
 #region ball touch event

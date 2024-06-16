@@ -16,7 +16,7 @@ spawnPlayer("Raffolappo",Sprite1_1,4,c_green);
 storePlayersIds();
 
 //events
-eventCycling = false;
+eventCycling = true;
 
 
 //startEventTimer(oGayEvent,10,4,"chi si muove gay");
@@ -49,6 +49,7 @@ fatto #) chi si muove
 fatto #) chi tocca terra (chi non salta)
 fatto #) chi tocca la palla (giustamente)
 fatto #) chi tocca un muro
+fatto #) tocca un gay e aumenta il livello gay.
 
 
 °) blocchi a caso che escono (fisici)

@@ -6,7 +6,7 @@ if (eventCycling) {
 	if (global.eventTimeInterval == 0) && !(global.eventActive){
 	
 		//var eventChoose = choose(oBallTouchEvent,oGayEvent,oLazioEvent,oWallEvent);
-		var eventChoose = choose(oGayEvent);
+		var eventChoose = choose(oGayEvent,oGayContagionEvent,oLazioEvent);
 		setEventTimerText(eventChoose);
 		startEventTimer(eventChoose,10,4,eventTimerText);
 		global.eventActive = true;
