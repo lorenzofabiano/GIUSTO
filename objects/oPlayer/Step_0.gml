@@ -33,46 +33,21 @@ if (_right) physics_apply_force(x, y, 3000, 0);
 #region gay event
 
 if (instance_exists(oGayEvent)) {
-		//first coordinates check
-	if (checKForMovementIntervalNow == 0) && (nowChecked = false) {
-		xNow = x;
-		yNow = y;
-		nowChecked = true;
-	}
 
-		//second coordinates check and mark as gay if they're different
-	if (checKForMovementIntervalThen == 0) && (thenChecked = false) {
-		xThen = x;
-		yThen = y;
-		thenChecked = true;
-	
-		if (abs(xNow - xThen) > xDiff) or (abs(yNow - yThen) > yDiff) gay = true;	
-		else gay = false;
-	
-		nowChecked = false;
-		thenChecked = false;
-	
-		checKForMovementIntervalNow = baseChecKForMovementIntervalNow;
-		checKForMovementIntervalThen = baseChecKForMovementIntervalThen;
+	if (phy_speed > spdThreshold) gay = true;
+	else gay = false;
 
-
-		
-	}
-
-	if (gay) {
-		gayMarkTimer = baseGayMarkTimer;
-		timeSpentAsGay++;
-		with oGayEvent {
-			if (gayPlayerFound == false) {
-				gayPlayer = other;
-				gayPlayerFound = true;
-			}
-		}	
-	}
-	else gayMarkTimer = max(gayMarkTimer-1,0);
-
-	checKForMovementIntervalNow = max(checKForMovementIntervalNow-1,0);
-	checKForMovementIntervalThen = max(checKForMovementIntervalThen-1,0);
+	//if (gay) {
+	//	gayMarkTimer = baseGayMarkTimer;
+	//	//timeSpentAsGay++;
+	//	with oGayEvent {
+	//		if (gayPlayerFound == false) {
+	//			gayPlayer = other;
+	//			gayPlayerFound = true;
+	//		}
+	//	}	
+	//}
+	//else gayMarkTimer = max(gayMarkTimer-1,0);
 
 }
 
@@ -91,7 +66,7 @@ if (colliding) {
 #endregion
 
 #region ball touch event
-var colliding = physics_test_overlap(x,y+1,phy_rotation,PALLA);
+var colliding = physics_test_overlap(x,y,phy_rotation,PALLA);
 if (colliding) {
 	with oBallTouchEvent {
 		if (ballPlayerFound == false) {
@@ -128,3 +103,4 @@ if (phy_speed > shadowSpdThreshold) && (shadowSpawnRate < 0) {
 
 shadowSpawnRate--
 #endregion
+

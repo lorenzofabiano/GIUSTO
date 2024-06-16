@@ -57,7 +57,6 @@ if (duration > 0){
 			if (!isElementPresent){
 				array_push(listaGay, cur_pp)
 				//notifica cur_pp che è gay.
-				//TODO: 
 				cur_pp.gayLevel++;
 				cur_pp.Egay = true;			
 			}

@@ -33,30 +33,18 @@ ownColor = c_white;
 
 #region gay event
 //gay event
-baseChecKForMovementIntervalNow = 1;
-checKForMovementIntervalNow = baseChecKForMovementIntervalNow;
-
-baseChecKForMovementIntervalThen = 2;
-checKForMovementIntervalThen = baseChecKForMovementIntervalThen;
 
 nowChecked = false;
 thenChecked = false;
 
 xDiff = .5;
 yDiff = 2;
+spdThreshold = 1.5;
 
 baseGayMarkTimer=5;
 gayMarkTimer = 0;
 gay = false;
 Egay = false;
 gayLevel = 0;
-
-xNow = 0;
-yNow = 0;
-xThen = 0;
-yThen = 0;
-	
-timeSpentAsGay = 0;
-
 #endregion
 
