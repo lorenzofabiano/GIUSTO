@@ -3,8 +3,6 @@
 draw_set_halign(fa_center);
 draw_set_color(c_white);
 
-draw_self();
- 
 #region accessori gay
 if (Egay) {
 	/*
@@ -39,3 +37,4 @@ if (Elaziale) {
 	scale_factor = clamp(scale_factor, 0, 4);
 	draw_sprite_ext(bandieraLaziale,0,x-distanza_da_omino*cos(degtorad(image_angle+offset_angle)),y+distanza_da_omino*sin(degtorad(image_angle+offset_angle)),scale_factor,scale_factor, -phy_rotation,c_white,0.5);
 }
+#endregion
