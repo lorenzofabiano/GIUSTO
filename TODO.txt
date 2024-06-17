@@ -28,8 +28,8 @@ fatto (sni, solo camera che ruotola)#) (stanza che ruotola)
 
 
 BUG:
-- in 2 giocatori, se P1 tiene premuto destra, P2 non può saltare se anche lui tiene premuto destra.
-- nell'evento con i muri risulta difficile triggerare la collisione con il muro.
+"fixato" il problema si presenta su layer della tastiera e non nel gioco. - in 2 giocatori, se P1 tiene premuto destra, P2 non può saltare se anche lui tiene premuto destra.
+fixato - nell'evento con i muri risulta difficile triggerare la collisione con il muro.
 
 
 MUSICA

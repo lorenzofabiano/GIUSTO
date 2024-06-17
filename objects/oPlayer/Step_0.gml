@@ -28,6 +28,7 @@ if (_up) physics_apply_impulse(x,y,0,-1000);
 if (_left) physics_apply_force(x, y, -3000, 0);
 if (_right) physics_apply_force(x, y, 3000, 0);
 
+show_debug_message(string(self.nameChosen) + string(_up));
 #endregion
 
 #region gay event
@@ -110,7 +111,6 @@ if (instance_exists(oLazioEvent)) {
 	hasBeenLazioed = false;
 }
 
-show_debug_message(laziale);
 #endregion
 
 #region ball touch event
@@ -152,8 +152,10 @@ if (instance_exists(oBallTouchEvent)) {
 //	}	
 //}
 if (instance_exists(oWallEvent)) {
-	var colliding = physics_test_overlap(x,y,phy_rotation,oWall);
-	if (colliding) {
+	//show_debug_message(phy_speed_x);
+	//var colliding = physics_test_overlap(x+sign(phy_speed_x),y,phy_rotation,oWall);
+	//if (wallColliding) {
+	if (physics_test_overlap(x,y,image_angle,oWall)) {
 		toccaMuri = true;
 		if (!hasBeenToccamuried) {
 			levelUp("Sucker Level");
@@ -165,6 +167,8 @@ if (instance_exists(oWallEvent)) {
 	hasBeenToccamuried = false;
 	toccaMuri = false;
 }
+
+
 
 #endregion
 

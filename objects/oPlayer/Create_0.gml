@@ -4,7 +4,7 @@
 #region player params
 //id
 nameChosen = "Player";
-sprite = Sprite1_1;
+sprite = Sprite1_1_old;
 
 //control scheme from 1 to 4;
 controlScheme = 1;
@@ -68,9 +68,10 @@ EtoccaPalle = false;
 hasBeenToccapalled = false;
 #endregion
 
-#region tocca palle event
+#region tocca muri event
 toccaMuri = false;
 toccaMuriLevel = 0;
 EtoccaMuri = false;
 hasBeenToccamuried = false;
+wallColliding = false;
 #endregion

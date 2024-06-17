@@ -77,5 +77,4 @@ if (EtoccaMuri) {
 	scale_factor = clamp(scale_factor, 0, 4);
 	draw_sprite_ext(fungo,0,x-distanza_da_ominox*cos(degtorad(image_angle+offset_angle)),y-distanza_da_ominoy*sin(degtorad(image_angle+offset_angle)),scale_factor,scale_factor, -phy_rotation,c_white,0.7);
 }
-show_debug_message(EtoccaMuri);
 #endregion
