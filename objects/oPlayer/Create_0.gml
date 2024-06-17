@@ -47,13 +47,13 @@ gay = false;
 Egay = false;
 gayLevel = 0;
 hasBeenGayed = false;
-hasBeenLazioed = false;
 #endregion
 
 #region laziale 
 laziale = false;
 lazialeLevel = 0;
 Elaziale = false;
+hasBeenLazioed = false;
 #endregion
 
 #region gay contagion event
@@ -61,3 +61,16 @@ baseTouchDelay = 30;
 touchDelay = baseTouchDelay;
 #endregion
 
+#region tocca palle event
+toccaPalle = false;
+toccaPalleLevel = 0;
+EtoccaPalle = false;
+hasBeenToccapalled = false;
+#endregion
+
+#region tocca palle event
+toccaMuri = false;
+toccaMuriLevel = 0;
+EtoccaMuri = false;
+hasBeenToccamuried = false;
+#endregion

@@ -10,4 +10,4 @@ for (var i = 0; i < array_length(global.instance_ids); i++) {
 }
 
 
-if (instance_exists(oGayEvent)) draw_text(0,200,oGayEvent.duration);
+//if (instance_exists(oGayEvent)) draw_text(0,200,oGayEvent.duration);

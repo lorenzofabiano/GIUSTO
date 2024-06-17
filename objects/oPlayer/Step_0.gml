@@ -57,7 +57,10 @@ if (instance_exists(oGayEvent)) {
 	//}
 	//else gayMarkTimer = max(gayMarkTimer-1,0);
 
-} else hasBeenGayed = false;
+} else {
+	gay = false;
+	hasBeenGayed = false;
+}
 
 #endregion
 
@@ -85,6 +88,7 @@ if (instance_exists(oGayContagionEvent)) {
 #region lazio
 if (instance_exists(oLazioEvent)) {
 	var colliding = physics_test_overlap(x,y+1,phy_rotation,oGround);
+	
 	//if (colliding) {
 	//	with oLazioEvent_old {
 	//		if (lazioPlayerFound == false) {
@@ -101,33 +105,67 @@ if (instance_exists(oLazioEvent)) {
 		}
 	} else laziale = false;
 
-} else hasBeenLazioed = false;
+} else {
+	laziale = false;
+	hasBeenLazioed = false;
+}
 
+show_debug_message(laziale);
 #endregion
 
 #region ball touch event
-var colliding = physics_test_overlap(x,y,phy_rotation,PALLA);
-if (colliding) {
-	with oBallTouchEvent {
-		if (ballPlayerFound == false) {
-			ballPlayer = other;
-			ballPlayerFound = true;
+//var colliding = physics_test_overlap(x,y,phy_rotation,PALLA);
+//if (colliding) {
+//	with oBallTouchEvent {
+//		if (ballPlayerFound == false) {
+//			ballPlayer = other;
+//			ballPlayerFound = true;
+//		}
+//	}	
+//}
+
+if (instance_exists(oBallTouchEvent)) {
+	var colliding = physics_test_overlap(x,y,phy_rotation,PALLA);
+	if (colliding) {
+		toccaPalle = true;
+		if (!hasBeenToccapalled) {
+			levelUp("Palle toccate Level");
+			hasBeenToccapalled = true;
 		}
-	}	
+	} else toccaPalle = false;
+
+} else {
+	hasBeenToccapalled = false;
+	toccaPalle = false;
 }
 #endregion
 
 #region wall touch event
-//var collidingGround = physics_test_overlap(x,y+1,phy_rotation,oGround);
-var collidingWall = physics_test_overlap(x,y,phy_rotation,oWall);
-if (collidingWall) {
-	with oWallEvent {
-		if (wallPlayerFound == false) {
-			wallPlayer = other;
-			wallPlayerFound = true;
+////var collidingGround = physics_test_overlap(x,y+1,phy_rotation,oGround);
+//var collidingWall = physics_test_overlap(x,y,phy_rotation,oWall);
+//if (collidingWall) {
+//	with oWallEvent {
+//		if (wallPlayerFound == false) {
+//			wallPlayer = other;
+//			wallPlayerFound = true;
+//		}
+//	}	
+//}
+if (instance_exists(oWallEvent)) {
+	var colliding = physics_test_overlap(x,y,phy_rotation,oWall);
+	if (colliding) {
+		toccaMuri = true;
+		if (!hasBeenToccamuried) {
+			levelUp("Sucker Level");
+			hasBeenToccamuried = true;
 		}
-	}	
+	} else toccaMuri = false;
+
+} else {
+	hasBeenToccamuried = false;
+	toccaMuri = false;
 }
+
 #endregion
 
 #region trail

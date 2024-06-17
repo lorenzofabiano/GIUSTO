@@ -24,6 +24,12 @@ fatto (sni, solo camera che ruotola)#) (stanza che ruotola)
 °) schermata di vittoria e risultati
 °) pre-match con scelta del pg e nome
 °) modalità a team
+°) tasto fisico nella stanza per cambiare la musica
+
+
+BUG:
+- in 2 giocatori, se P1 tiene premuto destra, P2 non può saltare se anche lui tiene premuto destra.
+- nell'evento con i muri risulta difficile triggerare la collisione con il muro.
 
 
 MUSICA
