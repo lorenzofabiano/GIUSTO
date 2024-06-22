@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.pause = true;
 
 //SET RESOLUTION
 global.view_width = camera_get_view_width(view_camera[0]);
@@ -22,6 +23,7 @@ enum menu_page {
 	main,
 	settings,
 	audio,
+	//difficulty,
 	graphics,
 	controls,
 	height,
@@ -38,7 +40,7 @@ enum menu_element_type {
 
 dsMenuMain = create_menu_page(
 	["START", menu_element_type.script_runner, start_game()],
-	["OPTIONS", menu_element_type.page_transfer, settings_page()],
+	["OPTIONS", menu_element_type.page_transfer, menu_page.settings],
 	["EXIT", menu_element_type.script_runner, exit_game()],
 );
 
@@ -50,15 +52,15 @@ dsMenuSettings = create_menu_page(
 );
 
 dsMenuAudio = create_menu_page(
-	["MASTER", menu_element_type.slider,  change_volume(), 1, [0,1]],
-	["SOUNDS", menu_element_type.slider,  change_volume(), 1, [0,1]],
+	["MASTER", menu_element_type.slider,  change_volume(), 0.5, [0,1]],
+	["SOUNDS", menu_element_type.slider,  change_volume(), 0.2, [0,1]],
 	["MUSIC", menu_element_type.slider,  change_volume(), 1, [0,1]],
-	["BACK", menu_element_type.script_runner,  menu_page.settings],
+	["BACK", menu_element_type.page_transfer,  menu_page.settings],
 );
 
 dsMenuGraphics = create_menu_page(
 	["FULLSCREEN", menu_element_type.toggle,  toggle_fullscreen(), 1, ["Fullscreen","Windowed"]],
-	["BACK", menu_element_type.script_runner,  menu_page.settings],
+	["BACK", menu_element_type.page_transfer,  menu_page.settings],
 );
 
 dsMenuControls = create_menu_page(
@@ -66,7 +68,7 @@ dsMenuControls = create_menu_page(
 ["UP", menu_element_type.input, "UP", ord("W")],
 ["LEFT", menu_element_type.input, "LEFT", ord("A")],
 ["RIGHT", menu_element_type.input, "RIGHT", ord("D")],
-["BACK", menu_element_type.script_runner,  menu_page.settings],
+["BACK", menu_element_type.page_transfer,  menu_page.settings],
 );
 
 page = 0;
