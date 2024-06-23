@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"create_menu_page",
+  "%Name":"resume_game",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"create_menu_page",
+  "name":"resume_game",
   "parent":{
     "name":"menu_scripts",
     "path":"folders/Scripts/menu_scripts.yy",

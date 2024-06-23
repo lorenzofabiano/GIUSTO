@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"create_menu_page",
+  "%Name":"change_volume",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"create_menu_page",
+  "name":"change_volume",
   "parent":{
     "name":"menu_scripts",
     "path":"folders/Scripts/menu_scripts.yy",

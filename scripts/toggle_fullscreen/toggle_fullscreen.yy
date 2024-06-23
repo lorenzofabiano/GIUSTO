@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"scResumeGame",
+  "%Name":"toggle_fullscreen",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scResumeGame",
+  "name":"toggle_fullscreen",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"menu_scripts",
+    "path":"folders/Scripts/menu_scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -39,9 +39,9 @@ enum menu_element_type {
 }
 
 dsMenuMain = create_menu_page(
-	["START", menu_element_type.script_runner, start_game()],
+	["RESUME", menu_element_type.script_runner, resume_game],
 	["OPTIONS", menu_element_type.page_transfer, menu_page.settings],
-	["EXIT", menu_element_type.script_runner, exit_game()],
+	["EXIT", menu_element_type.script_runner, exit_game],
 );
 
 dsMenuSettings = create_menu_page(
@@ -52,14 +52,14 @@ dsMenuSettings = create_menu_page(
 );
 
 dsMenuAudio = create_menu_page(
-	["MASTER", menu_element_type.slider,  change_volume(), 0.5, [0,1]],
-	["SOUNDS", menu_element_type.slider,  change_volume(), 0.2, [0,1]],
-	["MUSIC", menu_element_type.slider,  change_volume(), 1, [0,1]],
+	["MASTER", menu_element_type.slider,  change_volume, .5, [0,1]],
+	["SOUNDS", menu_element_type.slider,  change_volume, .5, [0,1]],
+	["MUSIC", menu_element_type.slider,  change_volume, .5, [0,1]],
 	["BACK", menu_element_type.page_transfer,  menu_page.settings],
 );
 
 dsMenuGraphics = create_menu_page(
-	["FULLSCREEN", menu_element_type.toggle,  toggle_fullscreen(), 1, ["Fullscreen","Windowed"]],
+	["FULLSCREEN", menu_element_type.toggle,  toggle_fullscreen, 1, ["Fullscreen","Windowed"]],
 	["BACK", menu_element_type.page_transfer,  menu_page.settings],
 );
 
@@ -80,3 +80,5 @@ repeat(array_len) {
 	menu_option[i] = 0;
 	i++;
 }
+
+inputting = false;

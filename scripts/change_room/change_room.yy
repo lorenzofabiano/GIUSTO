@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"create_menu_page",
+  "%Name":"change_room",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"create_menu_page",
+  "name":"change_room",
   "parent":{
     "name":"menu_scripts",
     "path":"folders/Scripts/menu_scripts.yy",

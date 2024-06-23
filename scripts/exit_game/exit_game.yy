@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"scMenuFunctions",
+  "%Name":"exit_game",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scMenuFunctions",
+  "name":"exit_game",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"menu_scripts",
+    "path":"folders/Scripts/menu_scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
