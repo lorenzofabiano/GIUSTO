@@ -3,6 +3,8 @@
   "%Name":"GIUSTO",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"","%Name":"sound_effects","name":"sound_effects","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"","%Name":"music","name":"music","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -83,6 +85,9 @@
     {"id":{"name":"scManagePlayersBallsCentri","path":"scripts/scManagePlayersBallsCentri/scManagePlayersBallsCentri.yy",},},
     {"id":{"name":"scMiscellaneous","path":"scripts/scMiscellaneous/scMiscellaneous.yy",},},
     {"id":{"name":"toggle_fullscreen","path":"scripts/toggle_fullscreen/toggle_fullscreen.yy",},},
+    {"id":{"name":"snMASTER","path":"sounds/snMASTER/snMASTER.yy",},},
+    {"id":{"name":"snMUSIC","path":"sounds/snMUSIC/snMUSIC.yy",},},
+    {"id":{"name":"snSOUND","path":"sounds/snSOUND/snSOUND.yy",},},
     {"id":{"name":"bandiera","path":"sprites/bandiera/bandiera.yy",},},
     {"id":{"name":"bandieraLaziale","path":"sprites/bandieraLaziale/bandieraLaziale.yy",},},
     {"id":{"name":"bolas","path":"sprites/bolas/bolas.yy",},},

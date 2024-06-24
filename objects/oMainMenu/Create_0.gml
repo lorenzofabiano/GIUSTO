@@ -17,6 +17,7 @@ global.key_down = vk_down;
 
 display_set_gui_size(global.view_width,global.view_height);
 
+menu_option = [];
 
 //SET GRID VALUES
 enum menu_page {
@@ -52,9 +53,9 @@ dsMenuSettings = create_menu_page(
 );
 
 dsMenuAudio = create_menu_page(
-	["MASTER", menu_element_type.slider,  change_volume, .5, [0,1]],
-	["SOUNDS", menu_element_type.slider,  change_volume, .5, [0,1]],
-	["MUSIC", menu_element_type.slider,  change_volume, .5, [0,1]],
+	["MASTER", menu_element_type.slider,  change_volume, 1, [0,1]],
+	["SOUNDS", menu_element_type.slider,  change_volume, 1, [0,1]],
+	["MUSIC", menu_element_type.slider,  change_volume, 1, [0,1]],
 	["BACK", menu_element_type.page_transfer,  menu_page.settings],
 );
 
@@ -82,3 +83,6 @@ repeat(array_len) {
 }
 
 inputting = false;
+
+audio_group_load(music);
+audio_group_load(sound_effects);

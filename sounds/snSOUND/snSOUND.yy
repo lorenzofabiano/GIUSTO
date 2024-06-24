@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snSOUND",
+  "audioGroupId":{
+    "name":"sound_effects",
+    "path":"audiogroups/sound_effects",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.375283,
+  "name":"snSOUND",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snSOUND.wav",
+  "type":0,
+  "volume":1.0,
+}

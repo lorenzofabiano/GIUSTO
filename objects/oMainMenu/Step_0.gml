@@ -25,6 +25,16 @@ if (inputting) {
 		
 		
 		case menu_element_type.slider:
+		
+			switch(menu_option[page]){
+				
+				case 0: if(!audio_is_playing(snMASTER)) audio_play_sound(snMASTER,1,0); break;
+				case 1: if(!audio_is_playing(snSOUND)) audio_play_sound(snSOUND,1,0);  break;
+				case 2: if(!audio_is_playing(snMUSIC)) audio_play_sound(snMUSIC,1,0);  break;
+				
+			}
+			
+			
 			var hinput = keyboard_check(global.key_right) - keyboard_check(global.key_left);
 			if(hinput != 0){
 				
