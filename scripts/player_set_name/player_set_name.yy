@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"Menu",
+  "%Name":"player_set_name",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Menu",
+  "name":"player_set_name",
   "parent":{
     "name":"menu_scripts_shaun",
     "path":"folders/Scripts/menu_scripts_shaun.yy",

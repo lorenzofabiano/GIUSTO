@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"scNameInsert",
+  "%Name":"player_init",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scNameInsert",
+  "name":"player_init",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"menu_scripts_shaun",
+    "path":"folders/Scripts/menu_scripts_shaun.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"player_remove",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_remove",
+  "parent":{
+    "name":"menu_scripts_shaun",
+    "path":"folders/Scripts/menu_scripts_shaun.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

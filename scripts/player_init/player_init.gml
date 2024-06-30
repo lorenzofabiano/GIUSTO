@@ -1,9 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Menu(_x,_y,_options,_description = -1){
+
+
+//Menu(mouse_x,mouse_y,[["Fai una cosa", funzione_fai_una_cosa],["Niente", -1],["Di niente",-1]],"Choose an option!",1-4);
+function player_init(_x,_y,_options,_description = -1,_player_number = -1){
 	with(instance_create_depth(_x,_y,-999,oMenu)) {
 		options = _options;
 		description = _description;
+		player_number = _player_number;
 		optionsCount = array_length(_options)
 		hovermarker = "* ";
 		//hovermarker = sCursor;

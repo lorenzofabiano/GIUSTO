@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"player_open_name_insert",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_open_name_insert",
+  "parent":{
+    "name":"menu_scripts_shaun",
+    "path":"folders/Scripts/menu_scripts_shaun.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
