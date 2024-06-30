@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"change_volume",
   "parent":{
-    "name":"menu_scripts",
-    "path":"folders/Scripts/menu_scripts.yy",
+    "name":"menu_scripts_cosmonaut",
+    "path":"folders/Scripts/menu_scripts_cosmonaut.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

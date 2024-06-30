@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"exit_game",
+  "%Name":"FaiUnaCosa",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"exit_game",
+  "name":"FaiUnaCosa",
   "parent":{
-    "name":"menu_scripts_cosmonaut",
-    "path":"folders/Scripts/menu_scripts_cosmonaut.yy",
+    "name":"menu_scripts_shaun",
+    "path":"folders/Scripts/menu_scripts_shaun.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

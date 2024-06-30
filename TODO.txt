@@ -61,3 +61,151 @@ SFX:
 Smash Bros (Melee & Brawl) Crowd Gasp sound effect - event fail
 Sonic 1 Music: Game Over - event fail
 Sanctuary Guardian (What Meme) - Earthbound Music - during event
+
+
+
+
+
+
+-----------------------
+
+
+global.player1_name
+global.player1_skin
+global.player1_control_scheme
+
+obj_name_insert
+obj_skin_selector
+obj_color_selector
+obj_button_check
+
+char select menu functions
+
+LV0
+player_menu_create(_player_number) {
+	with oMenu {
+		player_number = _player_number;
+		//etc...	
+	}
+}
+player_menu_init_create(_player_number) {
+	with oMenuInit {
+		player_number = _player_number;
+		//etc...
+	}
+}
+
+
+LV1
+player_init(_player_number) {
+
+	
+	player_menu_create(_player_number);
+	//instance_destroy();
+	
+}
+player_remove(_player_number) {
+	switch(_player_number) {
+		case 1 {
+			global.player1_exists = false;
+		}
+		case 2 {
+			global.player2_exists = false;
+		}
+		case 3 {
+			global.player3_exists = false;
+		}
+		case 4 {
+			global.player4_exists = false;
+		}
+		break;
+	}
+	player_menu_init_create(_player_number);
+	instance_destroy();
+}
+
+LV2
+
+player_open_name_selector(_player_number,_x,_y) {
+	/*with instance create obj_name_insert {
+		player_number = _player_number
+	}
+
+*/
+	instance_destroy();
+}
+
+player_open_skin_selector(_player_number) {
+	/*with instance create obj_skin_selector {
+		player_number = _player_number
+	}
+
+*/
+	instance_destroy();
+	
+}
+player_open_color_selector(_player_number) {
+	,,
+	
+}
+player_open_button_check(_player_number) {
+	,,
+	
+}
+player_close_button_check(_player_number) {
+	,,
+	
+}
+
+LV3
+player_set_name(_string,player_number) {
+	switch(_player_number) {
+		case 1 {
+			global.player1_name = _string;
+		}
+		case 2 {
+			global.player2_name = _string;
+		}
+		case 3 {
+			global.player3_name = _string;
+		}
+		case 4 {
+			global.player4_name = _string;
+		}
+		break;
+	}
+}
+player_set_skin(_sprite,player_number) {
+	switch(_player_number) {
+		case 1 {
+			global.player1_skin = _sprite;
+		}
+		case 2 {
+			global.player2_skin = _sprite;
+		}
+		case 3 {
+			global.player3_skin = _sprite;
+		}
+		case 4 {
+			global.player4_skin = _sprite;
+		}
+		break;
+	}
+}
+player_set_color(_color,player_number) {
+	switch(_player_number) {
+		case 1 {
+			global.player1_skin = _sprite;
+		}
+		case 2 {
+			global.player2_skin = _sprite;
+		}
+		case 3 {
+			global.player3_skin = _sprite;
+		}
+		case 4 {
+			global.player4_skin = _sprite;
+		}
+		break;
+	}
+}

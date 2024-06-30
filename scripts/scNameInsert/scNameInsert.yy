@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"exit_game",
+  "%Name":"scNameInsert",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"exit_game",
+  "name":"scNameInsert",
   "parent":{
-    "name":"menu_scripts_cosmonaut",
-    "path":"folders/Scripts/menu_scripts_cosmonaut.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
