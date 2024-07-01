@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_color_selector",
+  "%Name":"oMenu_with_keyboard",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_color_selector",
+  "name":"oMenu_with_keyboard",
   "overriddenProperties":[],
   "parent":{
-    "name":"MenuOptions",
-    "path":"folders/Objects/MENU/MenuOptions.yy",
+    "name":"MENU",
+    "path":"folders/Objects/MENU.yy",
   },
   "parentObjectId":null,
   "persistent":false,

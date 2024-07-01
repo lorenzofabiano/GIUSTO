@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 // Draw the text box background
+draw_set_color(c_white);
 draw_rectangle(x, y, x + text_box_width, y + text_box_height, true);
 
 // Draw the text inside the box

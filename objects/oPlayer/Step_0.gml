@@ -27,8 +27,6 @@ switch (controlScheme)
 if (_up) physics_apply_impulse(x,y,0,-1000);
 if (_left) physics_apply_force(x, y, -3000, 0);
 if (_right) physics_apply_force(x, y, 3000, 0);
-
-show_debug_message(string(self.nameChosen) + string(_up));
 #endregion
 
 #region gay event

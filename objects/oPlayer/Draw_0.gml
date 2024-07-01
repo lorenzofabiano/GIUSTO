@@ -3,6 +3,7 @@
 draw_set_halign(fa_center);
 draw_set_color(c_white);
 
+draw_sprite_ext(sShadow,0,x,y,1.1,1.1,image_angle,ownColor,1);
 draw_self();
 
 #region accessori gay

@@ -8,8 +8,18 @@ numberOfPalle = 1;
 centriSpawn(numberOfCentri);
 palleSpawn(numberOfPalle);
 
-spawnPlayer("Goffredo",Sprite1_3,1,c_teal);
-spawnPlayer("Raffolappo",Sprite1_1,3,c_green);
+
+
+//spawnPlayer(global.player_name[],Sprite1_3,1,c_teal);
+var i = 0;
+repeat(array_length(global.player_exists)) {
+	
+	if (global.player_exists[i] == true){
+		spawnPlayer(global.player_name[i],global.player_skin[i],i+1,global.player_color[i]);
+	}
+	i++;
+}
+
 //spawnPlayer("Pietro1",Sprite1_1,4,c_green);
 //spawnPlayer("Pietro2",Sprite1_1,4,c_green);
 

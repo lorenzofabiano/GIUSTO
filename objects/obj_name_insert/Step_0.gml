@@ -14,9 +14,11 @@ if (_mouse_in_box) && (mouse_check_button_pressed(mb_left)) {
 if (active) {
     if (keyboard_check_pressed(vk_enter)) {
         // Handle Enter key: You can add code here to use the input string
-		player_set_name(text,player_number);
         show_debug_message("Entered text: " + text); // For demonstration
         active = false; // Deactivate after pressing Enter
+		//player_set_name(text,player_number);
+		global.player_name[player_number -1] = text;
+		player_open_main_menu();
 		instance_destroy();
     } else if (keyboard_key == vk_backspace) && keyboard_check_pressed(vk_anykey){
         // Handle Backspace

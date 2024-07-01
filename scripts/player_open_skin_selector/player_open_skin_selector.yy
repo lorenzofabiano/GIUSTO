@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"player_set_name",
+  "%Name":"player_open_skin_selector",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"player_set_name",
+  "name":"player_open_skin_selector",
   "parent":{
     "name":"menu_scripts_shaun",
     "path":"folders/Scripts/menu_scripts_shaun.yy",

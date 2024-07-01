@@ -2,11 +2,6 @@
 // You can write your code in this editor
 draw_sprite_stretched(sMenu,0,x-margin,y-margin,widthFull,heightFull);
 
-//draw_player_sprite
-draw_sprite_ext(sShadow,0,x+sprite_margin_x,y-sprite_margin_y,1.1,1.1,0,global.player_color[player_number-1],1);
-draw_sprite(global.player_skin[player_number-1],0,x+sprite_margin_x,y-sprite_margin_y);
-
-
 draw_set_color(c_white);
 //draw_set_font(yourFont);
 draw_set_halign(fa_left);

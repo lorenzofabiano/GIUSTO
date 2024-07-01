@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
+
 switch(player_number) {
 	case 1 :
 		sprite_index = p1_start;
@@ -40,7 +43,6 @@ var _spr_x_orig = x - _spr_width/2;
 var _spr_y_orig = y - _spr_height/2;
 
 if (mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,_spr_x_orig,_spr_y_orig,_spr_x_orig+_spr_width,_spr_y_orig+_spr_height) {
-	//player_init(player_number);
-	player_init(x,y,[["Nome", player_open_name_insert],["Skin", -1],["Controlli",-1],["Rimuovi",player_remove]],"PLAYER "+string(player_number),player_number);
+	player_open_main_menu();
 	instance_destroy();
 }
