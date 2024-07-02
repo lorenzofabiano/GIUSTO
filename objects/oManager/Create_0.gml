@@ -26,7 +26,7 @@ repeat(array_length(global.player_exists)) {
 storePlayersIds();
 
 //events
-eventCycling = false;
+eventCycling = true;
 
 
 //startEventTimer(oGayEvent,10,4,"chi si muove gay");

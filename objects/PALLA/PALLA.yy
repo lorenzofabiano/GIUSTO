@@ -11,8 +11,8 @@
   "name":"PALLA",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"GAME",
+    "path":"folders/Objects/GAME.yy",
   },
   "parentObjectId":null,
   "persistent":false,
