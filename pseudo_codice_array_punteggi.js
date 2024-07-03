@@ -10,7 +10,15 @@ var _array_high_scores = [player1.punti,player2.punti,player3.punti,player4.punt
 
 //Cerca il valore più alto e salvalo insieme al suo indice in un'array. Valore vuol dire punteggio, indice vuol dire giocatore.
 
+
 function trova valorePiùAlto in _array_high_scores e suo indice = trovati 7,0;
+
+var _max_val = _array_high_scores[0];
+for (i = 0; i <= _array_high_scores; i++) {
+	if (_max_val < _array_high_scores[i]) 
+	
+}
+
 
 var _array_high_scores_1st[0] = 7
 var _array_high_score_players_1st[0] = 0
@@ -54,3 +62,22 @@ _array_high_score_players_id_1st = [global.instance_ids[_array_high_score_player
 _array_high_score_players_id_2nd = [global.instance_ids[_array_high_score_players_2nd[0]]]
 _array_high_score_players_id_3rd = [global.instance_ids[_array_high_score_players_3rd[0]]]
 _array_high_score_players_id_4th = [global.instance_ids[_array_high_score_players_4th[0]]]
+
+
+run the check.
+get the highest scores and player index, save the instances in _podium_array[0] = [0,1,2,3];
+remove the highest score for 1st from the _highest scores_ and check again for 2nd.
+save instances in _podium_array[1] = [] ecc...
+
+
+
+var i_array = [];
+var _max_val = 0;
+for (var i = 0; i < array_length(global.instance_ids); i++) {
+
+	array_push(i_array,global.instance_ids[i]);
+}
+
+for (var i = 0; i < array_length(global.instance_ids); i++) {
+	if ()
+}

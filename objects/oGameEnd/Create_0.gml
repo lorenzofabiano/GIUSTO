@@ -1,64 +1,38 @@
 ///// @description Insert description here
 //// You can write your code in this editor
-var _max_val, _max_val_index;
+var i_array = [];
+var j_array = [[],[]];
 
-//In una lista ordinata di scores.
-
-//valori di riferimento iniziali:
-array_high_scores = [];
-for (var i = 0; i <= array_length(global.instance_ids); i++) {
-
-	array_push(array_high_scores,global.instance_ids[i]);
+for (var i = 0; i < array_length(global.instance_ids); i++) {
+	array_push(i_array,global.instance_ids[i]);
 }
 
+var _max_val = 0;
 
-//valori di esempio:
-//var array_high_scores = [7,5,7,1];
+for (k = 0; k < array_length(global.instance_ids); k++ {
 
-
-//Cerca i valori più alti e il loro indice e salvali in due array.
-//
-
-function _go_through_scores_and_save_highest_value_and_index() {
-
-	var _max_val = array_high_scores[0];
-	//var _max_val_index = 0;
-	
-	//trova il valore più alto e salvalo in _max_val
-	for ( var i = 0; i < array_length(array_high_scores); i++) {
-
-		if (_max_val <= array_high_scores[i]) 
-		{
-			_max_val = array_high_scores[i];
-		}
-
+	//otteniamo il valore massimo in tutta l'array
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (_max_val <=  i_array[i].points) _max_val = i_array[i].points;
 	}
 
-
-	var _max_val_array = [];
-	var _max_val_index_array = [];
-
-	//confronta il valore più alto trovato con tutte le entry nell'array. Salva valore e indice negli array.
-	for ( var i = 0; i < array_length(array_high_scores); i++) {
-
-		if (array_high_scores[i] = _max_val) 
-		{
-			array_push(_max_val_array,_max_val);
-			array_push(_max_val_index_array,i);
-		}
-
-	}
-	
-
-	for (var i = 0; i < array_length(_max_val_array); i++) {
-	
-		array_push(_array_high_scores_1st,_max_val_array[i]);
-		array_push(_array_high_score_players_1st,_max_val_index);
+	//salviamo nell'array 2d sull'indice k tutte le istanze che hanno il punteggio max
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (i_array[i].points == _max_val) array_push(j_array[k],i_array[i]);
 	}
 
-
+	//salviamo l'array di istanze variabile in una variabile che 
+	//non verrà modificata nel corso del prossimo loop
+	var l_array = i_array;
+	
+	//rimuoviamo dall'array di istanze variabile le istanze appena rankate
+	for (var i = 0; i < array_length(l_array); i++) {
+		//if (i_array[i].points == _max_val) array_delete(i_array,i,1);
+		//TODO: CANCELLA LE ENTRY NELL'ARRAY  i_array GIA' RANKATE CON QUALCHE FUNZIONE ADATTA PER CANCELLARE LE ENTRY NEGLI ARRAY
+	}
+	
+	_max_val = 0;
 }
-
 
 var _array_high_scores_1st = [];
 var _array_high_scores_2nd = [];
@@ -70,18 +44,66 @@ var _array_high_score_players_2nd = [];
 var _array_high_score_players_3rd = [];
 var _array_high_score_players_4th = [];
 
-//function trova in array_high_scores e suo indice
 
-_go_through_scores_and_save_highest_value_and_index();
+array_high_scores = [];
+for (var i = 0; i < array_length(global.instance_ids); i++) {
 
-
-
-
-//escludendo l'indice appena trovato, cerchiamo negli altri indici valori uguali a quello più alto e pushamolo nell'array dello score. Pushamo anche l'array dei player con l'indice del player.
-array_delete(array_high_scores,_max_val_index,1);
+	array_push(array_high_scores,global.instance_ids[i].points);
+}
 
 
-_go_through_scores_and_save_highest_value_and_index();
+
+
+//Cerca i valori più alti e il loro indice e salvali in due array.
+//
+
+var _max_val = array_high_scores[0];
+
+//trova il valore più alto e salvalo in _max_val
+for ( var i = 0; i < array_length(array_high_scores); i++) {
+
+	if (_max_val <= array_high_scores[i]) 
+	{
+		_max_val = array_high_scores[i];
+	}
+
+}
+
+
+var _max_val_array = [];
+var _max_val_index_array = [];
+
+//confronta il valore più alto trovato con tutte le entry nell'array. 
+// _max_val_array : Ritorna un'array di uno o più valori contenente gli score più alti in parità.
+// _max_val_index_array : Ritorna un'array di uno o più valori contenente gli indici dei player che hanno tali score.
+// e.g _max_val_array = [7,7]; _max_val_index_array = [0,2]; player 1 e player 3 hanno entrambi totalizzato 7 punti.
+
+for ( var i = 0; i < array_length(array_high_scores); i++) {
+
+	if (array_high_scores[i] = _max_val) 
+	{
+		array_push(_max_val_array,_max_val);
+		array_push(_max_val_index_array,i);
+	}
+
+}
+
+
+//crea un'array con tutti gli score e tutt gli indici dei player arrivati primi 
+for (var i = 0; i < array_length(_max_val_array); i++) {
+	array_push(_array_high_scores_1st,_max_val_array[i]);
+	array_push(_array_high_score_players_1st,_max_val_index_array[i]);
+}
+
+
+
+//elimina ogni score dei player appena rankati.
+for (var i = 0; i < array_length(_max_val_index_array); i++) {
+	array_delete(array_high_scores,_max_val_index_array[i],1);
+}
+
+
+
 
 array_push(_array_high_scores_2nd,_max_val);
 array_push(_array_high_score_players_2nd,_max_val_index);
