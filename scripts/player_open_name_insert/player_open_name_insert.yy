@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"player_open_name_insert",
   "isCompatibility":false,
   "isDnD":false,

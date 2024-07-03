@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"player_open_skin_selector",
   "isCompatibility":false,
   "isDnD":false,

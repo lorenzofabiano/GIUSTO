@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oCameraRotateEvent",
+  "%Name":"otemp",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oCameraRotateEvent",
+  "name":"otemp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sub Events",
-    "path":"folders/Objects/Events/Sub Events.yy",
+    "name":"GAME",
+    "path":"folders/Objects/GAME.yy",
   },
   "parentObjectId":null,
   "persistent":false,

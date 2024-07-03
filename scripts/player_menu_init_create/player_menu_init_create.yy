@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"player_menu_init_create",
   "isCompatibility":false,
   "isDnD":false,

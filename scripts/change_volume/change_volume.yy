@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"change_volume",
   "isCompatibility":false,
   "isDnD":false,

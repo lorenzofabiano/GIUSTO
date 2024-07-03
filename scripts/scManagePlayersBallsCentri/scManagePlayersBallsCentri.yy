@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scManagePlayersBallsCentri",
   "isCompatibility":false,
   "isDnD":false,

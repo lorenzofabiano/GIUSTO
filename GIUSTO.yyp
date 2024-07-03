@@ -20,8 +20,8 @@
     {"$GMFolder":"","%Name":"Events","folderPath":"folders/Objects/Events.yy","name":"Events","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sub Events","folderPath":"folders/Objects/Events/Sub Events.yy","name":"Sub Events","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"subEventAsset","folderPath":"folders/Objects/Events/Sub Events/subEventAsset.yy","name":"subEventAsset","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"MENU","folderPath":"folders/Objects/MENU.yy","name":"MENU","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GAME","folderPath":"folders/Objects/GAME.yy","name":"GAME","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"MENU","folderPath":"folders/Objects/MENU.yy","name":"MENU","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"MenuOptions","folderPath":"folders/Objects/MENU/MenuOptions.yy","name":"MenuOptions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -40,7 +40,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.0.157",
   },
   "name":"GIUSTO",
   "resources":[
@@ -78,6 +78,7 @@
     {"id":{"name":"oShadow","path":"objects/oShadow/oShadow.yy",},},
     {"id":{"name":"oSpark","path":"objects/oSpark/oSpark.yy",},},
     {"id":{"name":"oSubTimer","path":"objects/oSubTimer/oSubTimer.yy",},},
+    {"id":{"name":"otemp","path":"objects/otemp/otemp.yy",},},
     {"id":{"name":"oTextInput","path":"objects/oTextInput/oTextInput.yy",},},
     {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},},
     {"id":{"name":"oTrail","path":"objects/oTrail/oTrail.yy",},},
