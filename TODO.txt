@@ -31,6 +31,8 @@ BUG:
 "fixato" il problema si presenta su layer della tastiera e non nel gioco. - in 2 giocatori, se P1 tiene premuto destra, P2 non può saltare se anche lui tiene premuto destra.
 fixato - nell'evento con i muri risulta difficile triggerare la collisione con il muro.
 
+A RANDOM, QUANDO PARTE UN EVENTO E SI GIOCA ALMENO IN 3, SE UNO DEI PLAYER FALLISCE L'EVENTO, IL GIOCO SI FREEZA.
+
 
 MUSICA
 

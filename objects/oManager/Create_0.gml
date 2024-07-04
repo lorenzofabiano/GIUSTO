@@ -36,12 +36,14 @@ eventTimerText = "";
 subEventTimerText = "";
 
 //set how long it has to be before new event starts
-global.baseEventTimeInterval = 10 * 60;
+//global.baseEventTimeInterval = 10 * 60;
+global.baseEventTimeInterval = 0 * 60;
 global.eventTimeInterval = global.baseEventTimeInterval;
 global.eventActive = 0;
 
 //same for sub events
-global.baseSubEventTimeInterval = 20 * 60;
+//global.baseSubEventTimeInterval = 20 * 60;
+global.baseSubEventTimeInterval = 5000 * 60;
 global.subEventTimeInterval = global.baseSubEventTimeInterval;
 global.subEventActive = 0;
 
