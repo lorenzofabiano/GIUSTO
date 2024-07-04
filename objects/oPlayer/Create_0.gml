@@ -14,12 +14,14 @@ _up = 0;
 _left = 0;
 _right = 0;
 
+//movement
+movement_speed_horizontal = 3000;
+movement_speed_vertical = 1000;
+
 //score
 points = 0;
 
 //shadow
-
-
 //speed over which a shadow appears
 shadowSpdThreshold = 17;
 //each how many steps should the shadow appear when the speed is reached

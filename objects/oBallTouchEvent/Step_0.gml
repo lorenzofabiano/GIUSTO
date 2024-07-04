@@ -41,9 +41,9 @@ if (duration > 0){
 			//di base parto che non ce
 			var isElementPresent = false
 			//scorro la lista
-			for (var i = 0; i <= array_length(listaToccaPalle)-1; i++) {
+			for (var j = 0; j < array_length(listaToccaPalle); j++) {
 				//storo l'elemento corrente della lista
-				var cur_ele = listaToccaPalle[i]
+				var cur_ele = listaToccaPalle[j]
 				//se l'elemento è uguale a cur_pp
 				//vuol dire che cur_pp gia ce!
 				if (cur_pp == cur_ele){

@@ -24,9 +24,9 @@ switch (controlScheme)
 }
 
 //movement
-if (_up) physics_apply_impulse(x,y,0,-1000);
-if (_left) physics_apply_force(x, y, -3000, 0);
-if (_right) physics_apply_force(x, y, 3000, 0);
+if (_up) physics_apply_impulse(x,y,0,-movement_speed_vertical);
+if (_left) physics_apply_force(x, y, -movement_speed_horizontal, 0);
+if (_right) physics_apply_force(x, y, movement_speed_horizontal, 0);
 #endregion
 
 #region gay event

@@ -41,9 +41,9 @@ if (duration > 0){
 			//di base parto che non ce
 			var isElementPresent = false
 			//scorro la lista
-			for (var i = 0; i <= array_length(listaLaziale)-1; i++) {
+			for (var j = 0; j < array_length(listaLaziale); j++) {
 				//storo l'elemento corrente della lista
-				var cur_ele = listaLaziale[i]
+				var cur_ele = listaLaziale[j]
 				//se l'elemento è uguale a cur_pp
 				//vuol dire che cur_pp gia ce!
 				if (cur_pp == cur_ele){

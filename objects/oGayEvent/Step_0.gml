@@ -29,7 +29,7 @@ if (scrittaDuration == 0) {
 //se evento è attivo
 if (duration > 0){
 	//scorriamo tutti i players
-	for (var i = 0; i <= array_length(global.instance_ids)-1; i++) {
+	for (var i = 0; i < array_length(global.instance_ids); i++) {
 		show_debug_message("Gay event, loop" + string(i));
 		//storo player corrent in cur_pp
 		var cur_pp = global.instance_ids[i]
@@ -42,9 +42,10 @@ if (duration > 0){
 			//di base parto che non ce
 			var isElementPresent = false
 			//scorro la lista
-			for (var i = 0; i < array_length(listaGay); i++) {
+			for (var j = 0; j < array_length(listaGay); j++) {
+				show_debug_message("Gay event, looping through lista gay, loop " + string(j));
 				//storo l'elemento corrente della lista
-				var cur_ele = listaGay[i]
+				var cur_ele = listaGay[j]
 				//se l'elemento è uguale a cur_pp
 				//vuol dire che cur_pp gia ce!
 				if (cur_pp == cur_ele){
