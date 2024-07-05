@@ -87,15 +87,7 @@ if (instance_exists(oGayContagionEvent)) {
 #region lazio
 if (instance_exists(oLazioEvent)) {
 	var colliding = physics_test_overlap(x,y+1,phy_rotation,oGround);
-	
-	//if (colliding) {
-	//	with oLazioEvent_old {
-	//		if (lazioPlayerFound == false) {
-	//			lazioPlayer = other;
-	//			lazioPlayerFound = true;
-	//		}
-	//	}	
-	//}
+
 	if (colliding) {
 		laziale = true;
 		if (!hasBeenLazioed) {
@@ -139,21 +131,11 @@ if (instance_exists(oBallTouchEvent)) {
 #endregion
 
 #region wall touch event
-////var collidingGround = physics_test_overlap(x,y+1,phy_rotation,oGround);
-//var collidingWall = physics_test_overlap(x,y,phy_rotation,oWall);
-//if (collidingWall) {
-//	with oWallEvent {
-//		if (wallPlayerFound == false) {
-//			wallPlayer = other;
-//			wallPlayerFound = true;
-//		}
-//	}	
-//}
+
+
 if (instance_exists(oWallEvent)) {
-	//show_debug_message(phy_speed_x);
-	//var colliding = physics_test_overlap(x+sign(phy_speed_x),y,phy_rotation,oWall);
-	//if (wallColliding) {
-	if (physics_test_overlap(x,y,image_angle,oWall)) {
+
+	if (physics_test_overlap(x,y+phy_speed,image_angle,oWall)) {
 		toccaMuri = true;
 		if (!hasBeenToccamuried) {
 			levelUp("Sucker Level");

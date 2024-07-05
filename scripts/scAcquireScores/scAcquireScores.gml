@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scAcquireScores(){
+function scAcquireMainScores(){
 	//array variabile con le istanze dei player da rankare.
 	var i_array = [];
 
@@ -62,10 +62,119 @@ function scAcquireScores(){
 				if !(l_array[i].points == _max_val) array_push(i_array,l_array[i]);
 			}
 
-			show_debug_message(j_array);
-
 		}
 	}
+	
+	return j_array;
+}
+
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scAcquireGayLevelScores(){
+	//array variabile con le istanze dei player da rankare.
+	var i_array = [];
+	var j_array = [];
+
+	//salvo in i_array le istanze dei player, comprensive di tutti i parametri necessari fra cui i punteggi.
+	for (var i = 0; i < array_length(global.instance_ids); i++) {
+		array_push(i_array,global.instance_ids[i]);
+	}
+
+	//inizializzo variabile per acquisire il valore più alto nell'array 
+	var	_max_val = 0;
+	
+	//otteniamo il valore massimo dei punti in tutta l'array
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (_max_val <=  i_array[i].gayLevel) _max_val = i_array[i].gayLevel;
+	}
+	
+	//salviamo nell'array 2d sull'indice k tutte le istanze che hanno il punteggio max
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (i_array[i].gayLevel == _max_val) array_push(j_array,i_array[i]);
+	}
+
+	
+	return j_array;
+}
+
+
+function scAcquireLazialeLevelScores(){
+	//array variabile con le istanze dei player da rankare.
+	var i_array = [];
+	var j_array = [];
+
+	//salvo in i_array le istanze dei player, comprensive di tutti i parametri necessari fra cui i punteggi.
+	for (var i = 0; i < array_length(global.instance_ids); i++) {
+		array_push(i_array,global.instance_ids[i]);
+	}
+
+	//inizializzo variabile per acquisire il valore più alto nell'array 
+	var	_max_val = 0;
+	
+	//otteniamo il valore massimo dei punti in tutta l'array
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (_max_val <=  i_array[i].lazialeLevel) _max_val = i_array[i].lazialeLevel;
+	}
+	
+	//salviamo nell'array 2d sull'indice k tutte le istanze che hanno il punteggio max
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (i_array[i].lazialeLevel == _max_val) array_push(j_array,i_array[i]);
+	}
+
+	
+	return j_array;
+}
+
+function scAcquireToccaPalleLevelScores(){
+	//array variabile con le istanze dei player da rankare.
+	var i_array = [];
+	var j_array = [];
+
+	//salvo in i_array le istanze dei player, comprensive di tutti i parametri necessari fra cui i punteggi.
+	for (var i = 0; i < array_length(global.instance_ids); i++) {
+		array_push(i_array,global.instance_ids[i]);
+	}
+
+	//inizializzo variabile per acquisire il valore più alto nell'array 
+	var	_max_val = 0;
+	
+	//otteniamo il valore massimo dei punti in tutta l'array
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (_max_val <=  i_array[i].toccaPalleLevel) _max_val = i_array[i].toccaPalleLevel;
+	}
+	
+	//salviamo nell'array 2d sull'indice k tutte le istanze che hanno il punteggio max
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (i_array[i].toccaPalleLevel == _max_val) array_push(j_array,i_array[i]);
+	}
+
+	
+	return j_array;
+}
+
+function scAcquireToccaMuriLevelScores(){
+	//array variabile con le istanze dei player da rankare.
+	var i_array = [];
+	var j_array = [];
+
+	//salvo in i_array le istanze dei player, comprensive di tutti i parametri necessari fra cui i punteggi.
+	for (var i = 0; i < array_length(global.instance_ids); i++) {
+		array_push(i_array,global.instance_ids[i]);
+	}
+
+	//inizializzo variabile per acquisire il valore più alto nell'array 
+	var	_max_val = 0;
+	
+	//otteniamo il valore massimo dei punti in tutta l'array
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (_max_val <=  i_array[i].toccaMuriLevel) _max_val = i_array[i].toccaMuriLevel;
+	}
+	
+	//salviamo nell'array 2d sull'indice k tutte le istanze che hanno il punteggio max
+	for (var i = 0; i < array_length(i_array); i++) {
+		if (i_array[i].toccaMuriLevel == _max_val) array_push(j_array,i_array[i]);
+	}
+
 	
 	return j_array;
 }

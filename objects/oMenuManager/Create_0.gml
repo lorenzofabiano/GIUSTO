@@ -43,5 +43,6 @@ player_menu_init_create(1);
 player_menu_init_create(2);
 player_menu_init_create(3);
 player_menu_init_create(4);
+instance_create_layer(room_width/2,room_height/4,"Instances",obj_timer_selector);
 
 #endregion

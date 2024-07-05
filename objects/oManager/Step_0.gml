@@ -5,8 +5,8 @@ if (eventCycling) {
 
 	if (global.eventTimeInterval == 0) && !(global.eventActive){
 	
-		var eventChoose = choose(oBallTouchEvent,oGayEvent,oLazioEvent,oWallEvent,oGayContagionEvent);
-		//var eventChoose = choose(oGayEvent);
+		//var eventChoose = choose(oBallTouchEvent,oGayEvent,oLazioEvent,oWallEvent,oGayContagionEvent);
+		var eventChoose = choose(oWallEvent);
 		setEventTimerText(eventChoose);
 		startEventTimer(eventChoose,10,4,eventTimerText);
 		global.eventActive = true;
@@ -26,3 +26,6 @@ if (eventCycling) {
 	global.subEventTimeInterval = max(global.subEventTimeInterval-1,0);
 }
 
+
+//if ((global.game_duration) < 0 && !(instance_exists(oGameEnd))) instance_create_layer(x,y,"Instances",oGameEnd);
+global.game_duration--;

@@ -7,3 +7,4 @@
 
 
 ending_duration = max(0,ending_duration-1);
+if (ending_duration == 0) screen_fade = clamp(screen_fade+screen_fade_speed,0,1);

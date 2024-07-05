@@ -7,7 +7,10 @@ draw_set_color(c_white);
 
 for (var i = 0; i < array_length(global.instance_ids); i++) {
 	draw_text(0,y + (i*20), "PUNTI DI " + string(global.instance_ids[i].nameChosen) + " :" + string(global.instance_ids[i].points));
+
+
 }
 
+if (global.game_duration > 0) draw_text(0,y+(array_length(global.instance_ids)*20),"TIMER : " + string(floor(global.game_duration/60)));
 
 //if (instance_exists(oGayEvent)) draw_text(0,200,oGayEvent.duration);

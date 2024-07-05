@@ -14,3 +14,5 @@ if (text_pos_x > _screen_w/2) text_pos_x = _screen_w/2;
 
 
 draw_text_transformed(text_pos_x,_screen_h/2,text,5,5,0);
+
+if (ending_duration == 0) draw_sprite_ext(sPixel,0,0,0,_screen_w,_screen_h,0,c_black,screen_fade); 
