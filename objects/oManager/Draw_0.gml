@@ -12,3 +12,5 @@ draw_set_color(c_white);
 for (var i = 1; i <= array_length(global.instance_ids); i++) {
 	textOverPlayer(string(global.instance_ids[i-1].nameChosen),45,i);
 }
+
+draw_rectangle(1,1,room_width-2,room_height-2,1);

@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 margin = 50;
+margin2 = 60;
 down_margin = 60;
 bbox_width = 60;
 bbox_height = 50;

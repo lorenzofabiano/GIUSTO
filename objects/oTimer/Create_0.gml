@@ -4,16 +4,23 @@ timerDuration = 0;
 
 textSpd = 50;
 timerTextPosX = 0;
-timerTextPosY = room_height/2;
-timerMaxTextPosX = room_width/2;
+//timerTextPosY = room_height/2;
+//timerMaxTextPosX = room_width/2;
+timerTextPosY = display_get_gui_height()/2;
+timerMaxTextPosX = display_get_gui_width()/2;
 
 textPosX = 0;
-textPosY = room_height/2 - 100;
-maxTextPosX = room_width/2;
+//textPosY = room_height/2 - 100;
+//maxTextPosX = room_width/2;
+textPosY = display_get_gui_height()/2 - 100;
+maxTextPosX = display_get_gui_width()/2;
+
 
 textUpperPosX = 0;
-textUpperPosY = room_height/2 - 150;
-maxTextUpperPosX = room_width/2;
+//textUpperPosY = room_height/2 - 150;
+//maxTextUpperPosX = room_width/2;
+textUpperPosY = display_get_gui_height()/2 - 150;
+maxTextUpperPosX = display_get_gui_width()/2;
 
 textOverTimer = "PROSSIMO EVENTO: GAY";
 textUpper = "PROSSIMO EVENTO:";

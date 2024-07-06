@@ -51,11 +51,13 @@ if (scrittaDuration > 0){
 	
 	
 	if (array_length(listaGay)>0){
+		draw_set_valign(fa_top);
 		draw_text_transformed(textPosX,textPosYPlayer,listaNomi + " \n"+numTxt+" GAY",3,3,0);
 		draw_text_transformed(textPosX,textPosYPlayer + 200,subText,3,3,0);
 	}
 	
 	//if (array_length(listaGay)== 0){
+	draw_set_valign(fa_bottom);
 	draw_text_transformed(textPosX,textPosY,"CHI SI MUOVE E' GAY",3,3,0);
 	//}
 }

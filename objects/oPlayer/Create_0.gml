@@ -4,7 +4,7 @@
 #region player params
 //id
 nameChosen = "Player";
-sprite = Sprite1_1_old;
+sprite = noone;
 
 //control scheme from 1 to 4;
 controlScheme = 1;

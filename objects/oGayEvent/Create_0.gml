@@ -4,9 +4,9 @@
 //
 textSpd = 50;
 textPosX = 0;
-textPosY = room_height/2 - 50;
-textPosYPlayer = room_height/2;
-maxTextPosX = room_width/2;
+textPosY = display_get_gui_height()/2 - 50;
+textPosYPlayer = display_get_gui_height()/2;
+maxTextPosX = display_get_gui_width()/2;
 subText = choose("Ovviamente...","Dai non piagne...","Lo sapevano anche i sassi...","Prevedibilissimo...","Palese...","Non avevamo dubbi...");
 
 duration = 300;

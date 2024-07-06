@@ -33,13 +33,14 @@ function playersSpawn(nPlayers){
 	}
 }
 
-function spawnPlayer(name,sprite,controls,color){
+function spawnPlayer(name,_sprite,controls,color){
 
 	var first_posx = random_range(0,room_width);
 	var first_posy = random_range(0,room_height);
 	with instance_create_layer(first_posx,first_posy,"Instances",oPlayer) {
 		nameChosen = name;
-		sprite_index = sprite;
+		sprite_index = _sprite;
+		sprite = _sprite;
 		controlScheme = controls;
 		ownColor = color;
 	}

@@ -34,7 +34,7 @@ function player_init(_x,_y,_options,_description = -1,_player_number = -1){
 		player_number = _player_number;
 		optionsCount = array_length(_options)
 		hovermarker = "* ";
-		show_debug_message("My player number is: " + string(_player_number));
+		//show_debug_message("My player number is: " + string(_player_number));
 		//hovermarker = sCursor;
 		
 		//Set up size

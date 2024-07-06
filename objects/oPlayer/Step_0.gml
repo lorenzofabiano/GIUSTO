@@ -135,7 +135,7 @@ if (instance_exists(oBallTouchEvent)) {
 
 if (instance_exists(oWallEvent)) {
 
-	if (physics_test_overlap(x,y+phy_speed,image_angle,oWall)) {
+	if (physics_test_overlap(x,y,0,oWall)) {
 		toccaMuri = true;
 		if (!hasBeenToccamuried) {
 			levelUp("Sucker Level");

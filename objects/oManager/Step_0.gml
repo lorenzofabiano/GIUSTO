@@ -16,6 +16,7 @@ if (eventCycling) {
 	if (global.subEventTimeInterval == 0) && !(global.subEventActive){
 	
 		var eventChoose = choose(oMrSaturnEvent,oBigMrSaturnEvent,oFatChocoboEvent,oCameraRotateEvent);
+		//var eventChoose = choose(oCameraRotateEvent);
 		setSubEventTimerText(eventChoose);
 		startSubEventTimer(eventChoose,10,4,subEventTimerText);
 		global.subEventActive = true;
@@ -27,5 +28,5 @@ if (eventCycling) {
 }
 
 
-//if ((global.game_duration) < 0 && !(instance_exists(oGameEnd))) instance_create_layer(x,y,"Instances",oGameEnd);
+if ((global.game_duration) < 0 && !(instance_exists(oGameEnd))) instance_create_layer(x,y,"Instances",oGameEnd);
 global.game_duration--;

@@ -11,6 +11,6 @@ function player_open_skin_selector(){
 		
 		current_skin = _index;
 
-		show_debug_message("I'm the open skin selector script and my player number is: " + string(player_number));
+		//show_debug_message("I'm the open skin selector script and my player number is: " + string(player_number));
 	}
 }

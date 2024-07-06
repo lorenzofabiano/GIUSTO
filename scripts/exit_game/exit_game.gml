@@ -2,7 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 function exit_game() {
-	show_debug_message("exiting");
 	game_end();
 }
 

@@ -178,3 +178,29 @@ function scAcquireToccaMuriLevelScores(){
 	
 	return j_array;
 }
+	
+//2d array and 0 (for name) or 1 (for sprite) or 2 (for points)
+function acquire_ranked_names_or_sprites_or_points(player_array,nameOrSpriteOrPoints){
+
+	var i,j;
+	var _output_array = [[],[],[],[]];
+
+	for (i = 0; i < array_length(global.player_scores); i++) {
+	
+		for (j = 0; j < array_length(global.player_scores[i]); j++) {
+			
+			switch nameOrSpriteOrPoints {
+				case 0:
+					array_push(_output_array[i],global.player_scores[i][j].nameChosen);
+				break;
+				case 1:
+					array_push(_output_array[i],global.player_scores[i][j].sprite);
+				break;
+				case 2:
+					array_push(_output_array[i],global.player_scores[i][j].points);
+				break;
+			}	
+		}
+	}
+	return _output_array;
+}	

@@ -11,6 +11,6 @@ function player_open_color_selector(){
 		var _index = array_find_index(_array, _f);
 		
 		current_color = _index;
-		show_debug_message("I'm the open color selector script and my player number is: " + string(player_number));
+		//show_debug_message("I'm the open color selector script and my player number is: " + string(player_number));
 	}
 }
