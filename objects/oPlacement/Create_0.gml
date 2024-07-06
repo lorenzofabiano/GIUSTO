@@ -9,5 +9,7 @@ margin_from_player = 64;
 margin_from_platform = 32;
 margin_from_middle = 32;
 
+place = 0;
+
 start_x = 0;
 
