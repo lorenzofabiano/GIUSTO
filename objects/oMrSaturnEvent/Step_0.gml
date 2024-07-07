@@ -16,4 +16,5 @@ if (duration == 0) {
 	instance_destroy(oMrSaturn);
 	instance_destroy();
 }
+
 duration = max(duration-1,0);

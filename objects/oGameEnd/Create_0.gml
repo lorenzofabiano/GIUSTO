@@ -62,3 +62,8 @@ instance_destroy(PALLA);
 instance_destroy(oEvent);
 instance_destroy(oTimer);
 instance_destroy(oSubTimer);
+
+//music
+audio_stop_all();
+global.gameend_sound = getRandomGameEndSound();
+audio_play_sound(global.gameend_sound,1,0)

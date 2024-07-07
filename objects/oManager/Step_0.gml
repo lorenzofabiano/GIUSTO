@@ -5,8 +5,8 @@ if (eventCycling) {
 
 	if (global.eventTimeInterval == 0) && !(global.eventActive){
 	
-		//var eventChoose = choose(oBallTouchEvent,oGayEvent,oLazioEvent,oWallEvent,oGayContagionEvent);
-		var eventChoose = choose(oWallEvent);
+		var eventChoose = choose(oBallTouchEvent,oGayEvent,oLazioEvent,oWallEvent,oGayContagionEvent);
+		//var eventChoose = choose(oWallEvent);
 		setEventTimerText(eventChoose);
 		startEventTimer(eventChoose,10,4,eventTimerText);
 		global.eventActive = true;
@@ -15,8 +15,8 @@ if (eventCycling) {
 
 	if (global.subEventTimeInterval == 0) && !(global.subEventActive){
 	
-		var eventChoose = choose(oMrSaturnEvent,oBigMrSaturnEvent,oFatChocoboEvent,oCameraRotateEvent);
-		//var eventChoose = choose(oCameraRotateEvent);
+		//var eventChoose = choose(oMrSaturnEvent,oBigMrSaturnEvent,oFatChocoboEvent,oCameraRotateEvent);
+		var eventChoose = choose(oBigMrSaturnEvent);
 		setSubEventTimerText(eventChoose);
 		startSubEventTimer(eventChoose,10,4,subEventTimerText);
 		global.subEventActive = true;

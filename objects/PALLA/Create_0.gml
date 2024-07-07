@@ -36,3 +36,5 @@ trailSpdThreshold = 15;
 //each how many steps should the trail appear when the speed is reached
 baseTrailSpawnRate = 1;
 trailSpawnRate = baseTrailSpawnRate;
+
+bounce_sound = noone;

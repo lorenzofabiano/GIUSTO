@@ -16,5 +16,6 @@ function player_remove(){
 		break;
 	}*/
 	global.player_exists[player_number-1] = false;
+	audio_play_sound(snRemovePlayer,1,0);
 	player_menu_init_create(player_number);
 }

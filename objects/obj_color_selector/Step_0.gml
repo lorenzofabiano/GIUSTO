@@ -14,6 +14,7 @@ if (current_color < 0) current_color = array_length(color_array) -1;
 
 if (_click_in_bbox_ok) {
 	global.player_color[player_number-1] = color_array[current_color];
+	audio_play_sound(snOhBig,1,0);
 	player_open_main_menu();
 	instance_destroy();
 }

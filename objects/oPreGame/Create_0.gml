@@ -18,3 +18,6 @@ bar_thickness = 10;
 screen_w = display_get_gui_width();
 screen_h = display_get_gui_height();
 
+audio_stop_all();
+global.sound_pregame = getRandomPreGameSound();
+audio_play_sound(global.sound_pregame,1,0);

@@ -46,3 +46,13 @@ player_menu_init_create(4);
 instance_create_layer(room_width/2,room_height/4,"Instances",obj_timer_selector);
 
 #endregion
+
+
+#region play music
+audio_group_set_gain(audiogroup_default,.2,0);
+
+global.menu_music = getRandomMenuMusic();
+
+audio_stop_all();
+audio_play_sound(global.menu_music,1,true);
+#endregion

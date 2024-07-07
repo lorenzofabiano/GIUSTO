@@ -15,3 +15,7 @@ scrittaDuration = duration+180;
 listaToccaMuri = [];
 
 listaNomi = "";
+
+audio_sound_gain(global.game_music,.3,0);
+global.event_music = getEventMusic();
+audio_play_sound(global.event_music,1,true);

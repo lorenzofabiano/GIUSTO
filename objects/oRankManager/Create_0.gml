@@ -118,3 +118,9 @@ for (var i = 0; i < array_length(other_placements_array); i++;) {
 
 
 #endregion
+
+//music
+global.rank_music = getRandomRankMusic();
+audio_stop_all();
+audio_play_sound(global.rank_music,1,true);
+

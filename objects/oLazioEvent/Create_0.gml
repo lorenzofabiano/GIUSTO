@@ -20,3 +20,8 @@ endEvent = false;
 listaLaziale = [];
 
 listaNomi = "";
+
+audio_sound_gain(global.game_music,.3,0);
+//audio_pause_sound(global.game_music);
+global.event_music = getEventMusic();
+audio_play_sound(global.event_music,1,true);

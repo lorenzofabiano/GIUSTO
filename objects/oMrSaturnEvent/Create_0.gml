@@ -12,3 +12,4 @@ shootSaturnsFor = 60;
 fireDelay = 1;
 
 
+alarm[0] = 10;

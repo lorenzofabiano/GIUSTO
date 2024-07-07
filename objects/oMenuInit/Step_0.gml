@@ -44,5 +44,6 @@ var _spr_y_orig = y - _spr_height/2;
 
 if (mouse_check_button_pressed(mb_left)) && point_in_rectangle(mouse_x,mouse_y,_spr_x_orig,_spr_y_orig,_spr_x_orig+_spr_width,_spr_y_orig+_spr_height) {
 	player_open_main_menu();
+	audio_play_sound(snOk,1,0);
 	instance_destroy();
 }

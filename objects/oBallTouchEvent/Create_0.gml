@@ -15,3 +15,10 @@ scrittaDuration = duration+180;
 listaToccaPalle = [];
 
 listaNomi = "";
+
+
+//music
+audio_sound_gain(global.game_music,.5,0);
+//audio_pause_sound(global.game_music);
+global.event_music = getEventMusic();
+audio_play_sound(global.event_music,1,true);

@@ -38,3 +38,40 @@ function levelUp(text) {
 		gayLevelShow = true;
 	}
 }
+
+
+//music
+function getRandomMenuMusic() {
+	var _music = choose(mMVC2);
+	return _music;
+}
+
+function getRandomGameMusic() {
+	var _music = choose(mWaluigiPinball);
+	return _music;
+}
+
+function getRandomRankMusic() {
+	var _music = choose(mMarioPartyMiniGame);
+	return _music;
+}
+
+function getRandomPreGameSound() {
+	var _music = choose(snReadyGo);
+	return _music;
+}
+
+function getRandomGameEndSound() {
+	var _music = choose(snGameMelee);
+	return _music;
+}
+
+function getEventMusic() {
+	var _music = choose(snSuspense);
+	return _music;
+}
+
+function getPreEventSound() {
+	var _music = choose(snWarioNewEvent);
+	return _music;
+}

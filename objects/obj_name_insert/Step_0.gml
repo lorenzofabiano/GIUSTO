@@ -17,6 +17,7 @@ if (active) {
         active = false; // Deactivate after pressing Enter
 		//player_set_name(text,player_number);
 		global.player_name[player_number -1] = text;
+		audio_play_sound(snGunClick,1,0);
 		player_open_main_menu();
 		instance_destroy();
     } else if (keyboard_key == vk_backspace) && keyboard_check_pressed(vk_anykey){

@@ -14,6 +14,7 @@ if (current_skin < 0) current_skin = array_length(skin_array) -1;
 
 if (_click_in_bbox_ok) {
 	global.player_skin[player_number-1] = skin_array[current_skin];
+	audio_play_sound(snOhBig,1,0);
 	player_open_main_menu();
 	instance_destroy();
 }

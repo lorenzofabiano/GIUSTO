@@ -27,3 +27,7 @@ textUpper = "PROSSIMO EVENTO:";
 
 eventToSpawn = noone;
 eventToSpawnDuration = 0;
+
+audio_pause_sound(global.game_music);
+global.sound_preevent = getPreEventSound();
+audio_play_sound(global.sound_preevent,1,0);
