@@ -58,6 +58,7 @@
     {"id":{"name":"obj_timer_selector","path":"objects/obj_timer_selector/obj_timer_selector.yy",},},
     {"id":{"name":"oCameraRotateEvent","path":"objects/oCameraRotateEvent/oCameraRotateEvent.yy",},},
     {"id":{"name":"oCentroExplode","path":"objects/oCentroExplode/oCentroExplode.yy",},},
+    {"id":{"name":"oCover","path":"objects/oCover/oCover.yy",},},
     {"id":{"name":"oEvent","path":"objects/oEvent/oEvent.yy",},},
     {"id":{"name":"oFatChocobo","path":"objects/oFatChocobo/oFatChocobo.yy",},},
     {"id":{"name":"oFatChocoboEvent","path":"objects/oFatChocoboEvent/oFatChocoboEvent.yy",},},

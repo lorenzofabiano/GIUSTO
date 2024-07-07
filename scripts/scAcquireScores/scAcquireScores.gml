@@ -180,27 +180,62 @@ function scAcquireToccaMuriLevelScores(){
 }
 	
 //2d array and 0 (for name) or 1 (for sprite) or 2 (for points)
-function acquire_ranked_names_or_sprites_or_points(player_array,nameOrSpriteOrPoints){
+function acquire_ranked_names_or_sprites_or_points2d(player_array,nameOrSpriteOrPoints){
 
 	var i,j;
 	var _output_array = [[],[],[],[]];
 
-	for (i = 0; i < array_length(global.player_scores); i++) {
+	for (i = 0; i < array_length(player_array); i++) {
 	
-		for (j = 0; j < array_length(global.player_scores[i]); j++) {
+		for (j = 0; j < array_length(player_array[i]); j++) {
 			
 			switch nameOrSpriteOrPoints {
 				case 0:
-					array_push(_output_array[i],global.player_scores[i][j].nameChosen);
+					array_push(_output_array[i],player_array[i][j].nameChosen);
 				break;
 				case 1:
-					array_push(_output_array[i],global.player_scores[i][j].sprite);
+					array_push(_output_array[i],player_array[i][j].sprite);
 				break;
 				case 2:
-					array_push(_output_array[i],global.player_scores[i][j].points);
+					array_push(_output_array[i],player_array[i][j].points);
 				break;
 			}	
 		}
 	}
 	return _output_array;
 }	
+
+//same for 1d but also with other stats
+function acquire_ranked_names_or_sprites_or_points_1d(player_array,nameOrSpriteOrPoints){
+
+	var i;
+	var _output_array = [];
+
+	for (i = 0; i < array_length(player_array); i++) {
+	
+		switch nameOrSpriteOrPoints {
+			case 0:
+				array_push(_output_array,player_array[i].nameChosen);
+			break;
+			case 1:
+				array_push(_output_array,player_array[i].sprite);
+			break;
+			case 2:
+				array_push(_output_array,player_array[i].points);
+			break;
+			case 3: 
+				array_push(_output_array,player_array[i].gayLevel);
+			break;
+			case 4:
+				array_push(_output_array,player_array[i].lazialeLevel);
+			break;
+			case 5:
+				array_push(_output_array,player_array[i].toccaPalleLevel);
+			break;
+			case 6:
+				array_push(_output_array,player_array[i].toccaMuriLevel);
+			break;
+			}	
+		}
+	return _output_array;
+}
