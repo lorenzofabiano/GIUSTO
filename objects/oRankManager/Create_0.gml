@@ -3,6 +3,7 @@
 main_placements_array = [];
 other_placements_array = [];
 counter = -1;
+other_counter = -1;
 
 
 screen_w = display_get_gui_width();
@@ -94,7 +95,6 @@ with instance_create_layer(other_start_x,start_y+400,"Instances",oPlacement) {
 }
 
 
-
 with instance_create_layer(other_start_x2,start_y+600,"Instances",oPlacement) {
 	names = global.toccamuri_player_scores_names;
 	sprites = global.toccamuri_player_scores_sprites;
@@ -103,6 +103,18 @@ with instance_create_layer(other_start_x2,start_y+600,"Instances",oPlacement) {
 	kind_of_score = "other";
 }
 
+
+for (var i = 0; i < instance_number(oPlacement); i++;) {
+    other_placements_array[i] = instance_find(oPlacement,i);
+	//other_placements_array[i].currently_visible = false;
+}
+
+array_delete(other_placements_array,0,array_length(main_placements_array))
+
+for (var i = 0; i < array_length(other_placements_array); i++;) {
+    other_placements_array[i].currently_visible = false;
+	//other_placements_array[i].currently_visible = false;
+}
 
 
 #endregion
