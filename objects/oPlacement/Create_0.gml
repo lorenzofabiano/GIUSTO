@@ -18,3 +18,5 @@ place = "";
 start_x = 0;
 
 currently_visible = true;
+
+

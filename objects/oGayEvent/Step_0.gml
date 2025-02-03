@@ -58,13 +58,14 @@ if (duration > 0){
 				array_push(listaGay, cur_pp)
 				//notifica cur_pp che è gay.
 				cur_pp.gayLevel++;
-				cur_pp.Egay = true;			
+				cur_pp.Egay = true;
+				audio_play_sound(getGaspSound(),1,0);
 			}
 			
 		}
 	}
 	
-}
+}	
 
 
 

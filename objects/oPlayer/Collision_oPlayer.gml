@@ -7,7 +7,7 @@ if (phy_speed > 2) {
 		if !(audio_is_playing(snMetalGrind)) audio_play_sound(snMetalGrind,1,0);
 	}
 	
+	if !(audio_is_playing(snMetalGrind)) audio_play_sound(snMetalGrind,1,0);
 	
 }
 
-if !(audio_is_playing(snMetalGrind)) audio_play_sound(snMetalGrind,1,0);

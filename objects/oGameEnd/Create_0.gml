@@ -36,6 +36,7 @@ global.toccamuri_player_scores_level = acquire_ranked_names_or_sprites_or_points
 //show_debug_message("Gay player/s :" + string(global.gay_player_scores));
 //show_debug_message("Laziali :" + string(global.laziale_player_scores));
 //show_debug_message("ToccaPalle :" + string(global.toccapalle_player_scores));
+show_debug_message("ToccaPalle sprites:" + string(global.toccapalle_player_scores_sprites));
 //show_debug_message("Suckers :" + string(global.toccamuri_player_scores));
 
 

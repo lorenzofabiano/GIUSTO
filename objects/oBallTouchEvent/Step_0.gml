@@ -58,10 +58,12 @@ if (duration > 0){
 				array_push(listaToccaPalle, cur_pp)
 				//notifica cur_pp che è gay.
 				cur_pp.toccaPalleLevel++;
-				cur_pp.EtoccaPalle = true;			
+				cur_pp.EtoccaPalle = true;		
+				audio_play_sound(getGaspSound(),1,0);
 			}
 			
 		}
+		
 	}
 	
 }

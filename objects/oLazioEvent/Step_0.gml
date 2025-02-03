@@ -58,7 +58,8 @@ if (duration > 0){
 				array_push(listaLaziale, cur_pp)
 				//notifica cur_pp che è gay.
 				cur_pp.lazialeLevel++;
-				cur_pp.Elaziale = true;			
+				cur_pp.Elaziale = true;	
+				audio_play_sound(getGaspSound(),1,0);
 			}
 			
 		}

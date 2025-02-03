@@ -4,7 +4,7 @@ main_placements_array = [];
 other_placements_array = [];
 counter = -1;
 other_counter = -1;
-
+space_or_click_disable = false;
 
 screen_w = display_get_gui_width();
 screen_h = display_get_gui_height();
@@ -84,6 +84,7 @@ with instance_create_layer(other_start_x2,start_y+200,"Instances",oPlacement) {
 	sprites = global.toccapalle_player_scores_sprites;
 	level = global.toccapalle_player_scores_level;
 	whatLevel = "Tocca Scroti";
+	kind_of_score = "other";
 }
 
 with instance_create_layer(other_start_x,start_y+400,"Instances",oPlacement) {
@@ -122,5 +123,5 @@ for (var i = 0; i < array_length(other_placements_array); i++;) {
 //music
 global.rank_music = getRandomRankMusic();
 audio_stop_all();
-audio_play_sound(global.rank_music,1,true);
-
+audio_play_sound(snDrumRoll,1,1);
+//audio_play_sound(global.rank_music,1,true);

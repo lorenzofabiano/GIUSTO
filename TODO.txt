@@ -28,10 +28,9 @@ fatto (sni, solo camera che ruotola)#) (stanza che ruotola)
 
 
 BUG:
-"fixato" il problema si presenta su layer della tastiera e non nel gioco. - in 2 giocatori, se P1 tiene premuto destra, P2 non può saltare se anche lui tiene premuto destra.
+"fixato" il problema si presenta su layer della tastiera e non nel gioco, su tastiera meccanica non succede - in 2 giocatori, se P1 tiene premuto destra, P2 non può saltare se anche lui tiene premuto destra.
 fixato - nell'evento con i muri risulta difficile triggerare la collisione con il muro.
-
-A RANDOM, QUANDO PARTE UN EVENTO E SI GIOCA ALMENO IN 3, SE UNO DEI PLAYER FALLISCE L'EVENTO, IL GIOCO SI FREEZA.
+fixato - in un ciclo for nestato si usava la stessa variabile per tenere il conto del ciclo padre - A RANDOM, QUANDO PARTE UN EVENTO E SI GIOCA ALMENO IN 3, SE UNO DEI PLAYER FALLISCE L'EVENTO, IL GIOCO SI FREEZA.
 
 
 MUSICA
@@ -41,26 +40,35 @@ Prelude - FF
 GOLF PGA96 theme
 
 CHAR SELECT
-MVC2 - char select
-Here We Go! (Character Select) - Galaxy Fight: Universal Warriors (Sega Saturn)
-FFXIV OST Triple Triad Theme ( Shuffle or Boogie )
-Metal Slug 3 Musica Player Select
+#MVC2 - char select
+#Here We Go! (Character Select) - Galaxy Fight: Universal Warriors (Sega Saturn)
+#FFXIV OST Triple Triad Theme ( Shuffle or Boogie )
+#Metal Slug 3 Musica Player Select
 
 GAME
-Mario 64 slider
-Final Fantasy 7 Fiddle De Chocobo
-[10] DM DOKURO - Cave Story Arranged - Mischievous Robot
+#Mario 64 slider
+Super Mario 64 - Slider [Remix]
+#Mario Kart DS - Waluigi Pinball / Wario Stadium (DS) [Remix]
+#Final Fantasy 7 Fiddle De Chocobo
+#[10] DM DOKURO - Cave Story Arranged - Mischievous Robot
 Can Can - DJ Prisma (Hardstyle Remix)
 Payday 2 Official Soundtrack - #47 Pimped Out Getaway
-♬ Zeb89 - La Regola Dello Scambia Bare ♬
-GESÙ 3 - By Christian Ice & Matteo Montesi
-YTPMV: ITALIAN YOUTUBERS MEDLEY - VOL. 1
-PJANOO performed with ZEB's real voice
-Earthbound Music New Age Retro Hippy
+#♬ Zeb89 - La Regola Dello Scambia Bare ♬
+#GESÙ 3 - By Christian Ice & Matteo Montesi
+#YTPMV: ITALIAN YOUTUBERS MEDLEY - VOL. 1
+#PJANOO performed with ZEB's real voice
+#Earthbound Music New Age Retro Hippy
 Scatman (ski-ba-bop-ba-dop-bop) Official Video HD - Scatman John
+battle on the big bridge ffv advance
+
+endGame
+https://www.youtube.com/watch?v=91EmmSvi8HA
+
 
 RANK
 Mini-Game Vs. Results - New Super Mario Bros. (DS)
+all final fantasy fanfare
+
 
 SFX: 
 Smash Bros (Melee & Brawl) Crowd Gasp sound effect - event fail

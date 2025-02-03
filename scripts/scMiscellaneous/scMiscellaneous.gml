@@ -40,14 +40,16 @@ function levelUp(text) {
 }
 
 
+
+
 //music
 function getRandomMenuMusic() {
-	var _music = choose(mMVC2);
+	var _music = choose(mMVC2,mHereWeGo,mShuffleOrBoogie,mMetalSlugCharSelect);
 	return _music;
 }
 
 function getRandomGameMusic() {
-	var _music = choose(mWaluigiPinball);
+	var _music = choose(mWaluigiPinball,mSlider,mFiddleDeChocobo,mMischeviousRobot,mScambiaBare,mGesu3,mYTPMV_ITA,mPjanooZeb,mEarthBoundHippie,mScatman,mBattleBigBridge);
 	return _music;
 }
 
@@ -75,3 +77,17 @@ function getPreEventSound() {
 	var _music = choose(snWarioNewEvent);
 	return _music;
 }
+
+function getGaspSound() {
+	var _music = choose(snGasp1,snGasp2,snGasp3,snGasp4);
+	return _music;
+}
+
+function getPostWinMusic() {
+	var _music = choose(snMarioPartyWin2,mFanfare,mFanfare8);
+	return _music;
+}
+
+//function getRandomMenuMusic() {
+//	return choose(mMVC2,mHereWeGo,mShuffleOrBoogie,mMetalSlugCharSelect);
+//}
